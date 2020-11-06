@@ -1,4 +1,4 @@
-# README for Greg Walker
+# My Personal README
 
 Hello! My name is Greg Walker, and you may sometimes see my name pop up as Michael Walker. My first name is Michael, but I go by my middle name. I apologize in advance if you have trouble finding me in an address book somewhere. I use the pronouns he/him.
 
