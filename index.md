@@ -20,11 +20,13 @@ I think one of my core strengths is communication, both with my 18F colleagues a
 
 ## Scheduling and time zones
 
-I’m on Central Time. I am generally available from 9am to 5pm CT (10 ET/7 PT to 6 ET /3 PT). While I’m usually around, I prefer meetings no earlier than 10, but we can work it out if there’s a meeting that needs to come earlier. I’m currently debating whether to tweak my working hours so I can get better quality sleep.
+I’m on Central Time. I am generally available from 9am to 5pm CT (10 ET/7 PT to 6 ET /3 PT). While I’m usually around, I prefer meetings no earlier than 10, but we can work it out if there’s a meeting that needs to come earlier. I'm not a morning bird so it won't be my very best work, but if I can take notes and process later, that'll work out fine.
 
 ![central timezone](images/central-timezone.png)
 
 I try to keep my calendar up-to-date. There is a recurring block marked off for lunch. I ask that you respect it – if you see that I’m free immediately before or after, you can schedule over my planned lunch time, but please give me a heads-up so I can move the block. If we have to meet through lunch, I may be late or excuse myself to go make lunch, and I will eat on camera. I’m not being rude, I’m just taking care of myself. 🙂
+
+![sandwich](images/sandwich.png)
 
 ## Goals
 

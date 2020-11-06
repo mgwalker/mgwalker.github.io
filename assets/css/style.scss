@@ -1,0 +1,11 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+p img {
+  box-shadow: none;
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+}
