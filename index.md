@@ -1,6 +1,6 @@
 # My Personal README
 
-Hello! My name is Greg Walker, and you may sometimes see my name pop up as Michael Walker. My first name is Michael, but I go by my middle name. I apologize in advance if you have trouble finding me in an address book somewhere. I use the pronouns he/him.
+Hello! My name is Greg Walker, and you may sometimes see my name pop up as Michael Walker. My first name is Michael, but I go by my middle name. I apologize in advance if you have trouble finding me in an address book somewhere. My pronouns are he/him.
 
 ## Who am I?
 
@@ -12,9 +12,9 @@ I enjoy drawing and felting. Right now I am drawing a “this day in history” 
 
 ### Work
 
-I’m a consulting engineer at 18F. I mostly write Javascript these days, but I can read Python and Ruby well enough to review it, and I’m trying to get better at writing Python. I’m pretty happy writing both frontend and backend code, though making good CSS is hard for me.
+I’m a consulting engineer at [18F](https://18f.gov). I mostly write Javascript these days, but I can read Python and Ruby well enough to review it, and I’m trying to get better at writing Python. I’m pretty happy writing both frontend and backend code, though making good CSS is hard for me.
 
-I’ve worked on state Medicaid consulting projects, other acquisitions consulting projects, and even a build here or there. I really enjoy collaborating with my teams, sharing what I know and learning from them, so we can make better decisions.
+I’ve worked on state Medicaid consulting projects, other acquisitions consulting projects, and even a build here or there. On the acquisitions front, I've had experience at every stage, from building out the solicitation to vendor evaluations and on through post-award management. I really enjoy collaborating with my teams, sharing what I know and learning from them, so we can make better decisions.
 
 I think one of my core strengths is communication, both with my 18F colleagues and with our partners. That can be during meetings, in writing, or even code reviews.
 
