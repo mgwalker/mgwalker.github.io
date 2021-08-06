@@ -10,7 +10,7 @@ This is a work in progress because I haven't finished it yet.
 - **Started**: January, 2016
 - **Term out**: January, 2028
 - **Location**: Kansas City, Missouri
-- **Working hours**: 8:30 am ET to 5:00 pm ET
+- **Working hours**: 8:30 am CT to 5:00 pm CT
 
 ### Skills
 
