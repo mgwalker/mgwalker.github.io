@@ -98,7 +98,7 @@ _(in chronological order)_
   the roles of CMS, the states, and the IT vendors, and were well-received by
   everyone involved, including the vendor community.
 
-- **State of Washington IE&E modernization**
+- **State of Washington IE&E modernization**  
   Joined in progress. The state of Washington is currently in the process of
   rethinking their public benefits system, including potentially integrating
   various programs. One potential starting point is integrating eligibility and
@@ -110,7 +110,7 @@ _(in chronological order)_
   eager to adopt new practices, but we just didn't have enough time (and they
   didn't either, honestly) to establish those.
 
-- **ACF OPRE**
+- **ACF OPRE**  
   Joined in progress. We worked with the Administration of Children and Family's
   (ACF) Office of Planning, Research and Evaluation (OPRE). OPRE is responsible
   for a significant amount of research and evaluation grants, and they have a
