@@ -88,12 +88,40 @@ _(in chronological order)_
   existing SBIR system into NASA-owned infrastructure.
 
 - **CMS contract terminiation path analysis**  
-  This is my current project! I don't know much about it yet, but I'm excited to
-  be on the team. My understanding in a nutshell: we'll be investigating state
-  Medicaid IT contracts that were terminated early to see if we can spot warning
-  signs. The goals are to help identify what needs to be in place up front for
-  good outcomes, and help both CMS and state Medicaid offices identify when
-  projects aren't going well earlier so there is a better chance of saving them.
+  We worked with the Centers for Medicare and Medicaid Services (CMS) to do some
+  research into how and why state Medicaid IT contracts were terminated to try
+  to figure out ways to improve outcomes. This was a research-intensive project
+  that involved a bunch of interviews, and we learned a bunch about the
+  incentives at play. In coordination with our partners at CMS, we wrote a
+  report that outlined our findings and offered some proposals for how to
+  improve the odds of contracts producing value. Our recommendations touched on
+  the roles of CMS, the states, and the IT vendors, and were well-received by
+  everyone involved, including the vendor community.
+
+- **State of Washington IE&E modernization**
+  Joined in progress. The state of Washington is currently in the process of
+  rethinking their public benefits system, including potentially integrating
+  various programs. One potential starting point is integrating eligibility and
+  enrollment for all the programs into a single application. We joined the state
+  to help work through building out the first parts of a new digital system  in
+  a user-centered, iterative way. Unfortunately, due to internal TTS issues, we
+  were not able to continue this engagement and had to end it before we felt we
+  had made much progress. Our partners at Washington were great and eager to
+  eager to adopt new practices, but we just didn't have enough time (and they
+  didn't either, honestly) to establish those.
+
+- **ACF OPRE**
+  Joined in progress. We worked with the Administration of Children and Family's
+  (ACF) Office of Planning, Research and Evaluation (OPRE). OPRE is responsible
+  for a significant amount of research and evaluation grants, and they have a
+  legacy system that helps them track information about those various ongoing
+  projects. However, the legacy system no longer meets their needs and OPRE
+  staff are forced to manually collect and correlate a significant amount of
+  information. We originally intended to help OPRE by starting to build a new
+  product and eventually hand it off to a vendor team. However, due to internal
+  TTS constraints, the engagement was truncated and we ultimately focused on
+  helping OPRE write a solicitation and select a vendor to build the entire
+  product.
 
 ### Hobbies and interests
 
