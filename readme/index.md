@@ -123,6 +123,17 @@ _(in chronological order)_
   helping OPRE write a solicitation and select a vendor to build the entire
   product.
 
+- **OCC de-risking workshops**
+  Working with the Office of Child Care (OCC) in the Administration of Children
+  and Families (ACF), we presented a virtual version of our tech procurement
+  de-risking workshop to several OCC grantees (states, territories, and tribal
+  authorities). We recorded the content and made it available online. With the
+  help and input of OCC, we identified a few grantees for a deeper one-on-one
+  consultation to dive into their specific needs and try to give them useful
+  suggestions or advice. Along with helping OCC and its grantees, we also took
+  this time to pull de-risking workshop content together and package it into a
+  more readily reusable format.
+
 ### Hobbies and interests
 
 - playing with my dog
