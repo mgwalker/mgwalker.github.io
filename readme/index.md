@@ -134,6 +134,15 @@ _(in chronological order)_
   this time to pull de-risking workshop content together and package it into a
   more readily reusable format.
 
+- ***Team Talent support for TTSJobs site***
+  The TTSJobs site is how our Talent Team advertises job openings to the world.
+  It's been difficult for the Talent Team members to add new jobs because the
+  pages are littered with conditional logic, in the Liquid template language,
+  embedded in Markdown, relying heavily on frontmatter. The gist of my work was
+  to make it easier for Talent to create and update job postings. This included
+  a major overhaul to the base template they start with, moving logic into
+  Liquid includes, and reducing reliance on frontmatter.
+
 ### Hobbies and interests
 
 - playing with my dog
