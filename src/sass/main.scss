@@ -1,0 +1,39 @@
+---
+layout: null
+---
+
+@import '@emdgroup-liquid/liquid/dist/css/liquid';
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--ld-col-neutral-700);
+  font-family: var(--ld-font-body);
+  color: var(--ld-col-wht);
+
+  main {
+    padding: 1rem 4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--ld-col-neutral-800);
+
+    a {
+      color: var(--ld-col-rb-300);
+      &:visited {
+        color: var(--ld-col-rp-100);
+      }
+      &:hover {
+        color: var(--ld-col-vc-200);
+      }
+    }
+
+    li {
+      margin: var(--ld-sp-16) 0;
+    }
+  }
+}
