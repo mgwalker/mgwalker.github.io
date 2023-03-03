@@ -43,6 +43,12 @@
 
 _(most recent first)_
 
+- ### 18F Delivery Assurance
+
+  Recurring. As of February 2023, this is where 18F staff go when they're
+  between projects. It's a team that works on various 18F products that are
+  otherwise difficult to maintain due to our funding structure.
+
 - ### Team Talent support for TTSJobs site
 
   The TTSJobs site is how our Talent Team advertises job openings to the world.
