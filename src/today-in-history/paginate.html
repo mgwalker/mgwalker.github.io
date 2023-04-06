@@ -1,0 +1,36 @@
+---js
+{
+  pagination: {
+    data: "days",
+    size: 1,
+    alias: "day",
+    addAllPagesToCollections: false,
+    before: days => days.map((day, i) => ({
+      ...day,
+      next: days[i + 1] ?? days[0],
+      previous: days[i - 1] ?? days[days.length - 1],
+    })),
+  },
+  layout: "layouts/today-in-history",
+  permalink: "today-in-history/{{ day.iso }}/index.html",
+  eleventyExcludeFromCollections: true,
+  eleventyComputed: {
+    title: "{{ day.date }}"
+  }
+}
+---
+
+{% for img in day.entries %}
+<div>
+  <h3>{{ img.year }}</h3>
+  <figure>
+    <img
+      src="/assets/images/today-in-history/{{ day.iso }}_{{ img.year }}.jpg"
+      alt="{{ img.caption }}"
+    />
+    <figcaption class="sr-only">
+      {{ day.date}} {{ img.year }}: {{ img.title }}
+    </figcaption>
+  </figure>
+</div>
+{% endfor %}

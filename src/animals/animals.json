@@ -1,0 +1,30 @@
+{
+  "images": [
+    { "letter": "A", "name": "Ant" },
+    { "letter": "B", "name": "Bison" },
+    { "letter": "C", "name": "Camel" },
+    { "letter": "D", "name": "Donke" },
+    { "letter": "E", "name": "electric eel" },
+    { "letter": "F", "name": "fox" },
+    { "letter": "G", "name": "goat" },
+    { "letter": "H", "name": "hippo" },
+    { "letter": "I", "name": "Iberian ibex" },
+    { "letter": "J", "name": "jellyfish" },
+    { "letter": "K", "name": "kiwi" },
+    { "letter": "L", "name": "lemur" },
+    { "letter": "M", "name": "moose" },
+    { "letter": "N", "name": "narwhal" },
+    { "letter": "O", "name": "opposum" },
+    { "letter": "P", "name": "penguin" },
+    { "letter": "Q", "name": "quokka" },
+    { "letter": "R", "name": "robber (raccoon)" },
+    { "letter": "S", "name": "slot" },
+    { "letter": "T", "name": "turtle" },
+    { "letter": "U", "name": "unimaginary horned horse (unicorn)" },
+    { "letter": "V", "name": "vulture" },
+    { "letter": "W", "name": "walrus" },
+    { "letter": "X", "name": "xenomorph" },
+    { "letter": "Y", "name": "Yellow sheep" },
+    { "letter": "Z", "name": "Zorilla" }
+  ]
+}

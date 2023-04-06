@@ -1,0 +1,13 @@
+{
+  "images": [
+    { "letter": "A", "name": "Arnold from Hey Arnold!" },
+    { "letter": "B", "name": "Bender, from Futurama" },
+    { "letter": "C", "name": "CatDog, from CatDog" },
+    { "letter": "D", "name": "Dexter and Didi, from Dexter's Laboratory" },
+    { "letter": "E", "name": "Eustace, from Courage the Cowardly Dog" },
+    { "letter": "F", "name": "Ms Frizzle, from The Magic School Bus" },
+    { "letter": "G", "name": "Gogo Dodo, from Tiny Toon Adventures" },
+    { "letter": "H", "name": "Heffer Wolfe, from Rocko's Modern Life" },
+    { "letter": "I", "name": "Ickis, from Aaahh!!! Real Monsters" }
+  ]
+}

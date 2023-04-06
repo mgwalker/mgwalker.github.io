@@ -1,0 +1,12 @@
+<div class="image-grid">
+  {% for img in images %}
+  <div class="grid-cell">
+    <a href="/assets/images/toons/{{ img.letter }}.jpg">
+      <img
+        alt="{{ img.letter}}: {{ img.name }}"
+        src="/assets/images/toons/{{ img.letter }}.jpg"
+      />
+    </a>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,128 @@
+---js
+{
+  eleventyComputed: {
+    gifs: data => data.gifs.map(g => ({ ...g, static: g.uri.replace(/.gif/, 'h.jpg')}))
+  }
+}
+---
+
+<style type="text/css">
+  #search-bar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    z-index: 10;
+  }
+
+  #search-bar input {
+    width: calc(100% - 2.5em);
+    font-size: 1.5em;
+    border-radius: 1.5em;
+    padding: 0.25em 0.5em;
+  }
+
+  #copy-notification {
+    display: none;
+  }
+  #copy-notification.show {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -150px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555;
+    color: white;
+    border-radius: 25px;
+    opacity: 1;
+  }
+  #copy-notification.fade {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -150px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555;
+    color: white;
+    border-radius: 25px;
+    transition: opacity 2s;
+    opacity: 0;
+  }
+</style>
+
+<textarea id="copy-box" class="sr-only" readonly></textarea>
+<div id="copy-notification">URL copied to clipboard</div>
+
+<div id="search-bar">
+  <input id="search-bar-input" type="text" placeholder="search" />
+</div>
+
+<div class="image-grid">
+  {% for img in gifs %}
+  <div class="grid-cell" data-tags="{{ img.name }} {{ img.tags | join }}">
+    <div>{{ img.name }}</div>
+    <a>
+      <img
+        alt="{{ img.name }}"
+        src="{{ img.static }}"
+        onmouseenter="this.src='{{ img.uri }}'"
+        onmouseleave="this.src='{{img.static }}'"
+        onclick="document.getElementById('copy-box').value = '{{ img.uri }}'; document.getElementById('copy-box').select(); document.execCommand('copy'); showCopyDialog();"
+      />
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+<script>
+  let setNotificationFadeTimeout;
+  let setNotificationHideTimeout;
+
+  function showCopyDialog() {
+    clearTimeout(setNotificationFadeTimeout);
+    clearTimeout(setNotificationHideTimeout);
+
+    const notification = document.getElementById("copy-notification");
+    notification.setAttribute("class", "show");
+    setNotificationFadeTimeout = setTimeout(
+      () => notification.setAttribute("class", "fade"),
+      500
+    );
+    setNotificationHideTimeout = setTimeout(
+      () => notification.setAttribute("class", ""),
+      3000
+    );
+  }
+
+  const searchInput = document.getElementById("search-bar-input");
+  searchInput.addEventListener("input", () => {
+    const search = searchInput.value.toLowerCase();
+    const cells = document.querySelectorAll(".grid-cell");
+
+    if (search === "") {
+      cells.forEach((cell) => cell.removeAttribute("hidden"));
+    } else {
+      const terms = search.split(" ");
+      cells.forEach((cell) => {
+        const tags = cell.getAttribute("data-tags").toLowerCase();
+        const isMatch = terms.some((term) => tags.includes(term));
+        if (isMatch) {
+          cell.removeAttribute("hidden");
+        } else {
+          cell.setAttribute("hidden", "true");
+        }
+      });
+    }
+  });
+</script>

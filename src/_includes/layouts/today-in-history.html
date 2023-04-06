@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Today in History: {{ title }}</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="canonical" href="https://mgwalker.github.io{{ page.url }}" />
+
+    <meta
+      property="og:url"
+      content="https://mgwalker.github.io{{ page.url }}"
+    />
+    <meta property="og:title" content="Today in history: {{ title }}" />
+    <meta property="og:type" content="article" />
+
+    <style type="text/css">
+      nav {
+        float: right;
+        text-align: center;
+      }
+
+      div + div {
+        border-top: 2px solid var(--ld-col-rb-200);
+      }
+
+      figure img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <ld-header
+      site-name="mgwalker.github.io » Today in History"
+      logo-url="/"
+      sticky
+    >
+      <ld-icon size="lg" slot="logo">
+        <img src="/assets/images/cooger.svg" style="width: 24px" />
+      </ld-icon>
+    </ld-header>
+
+    <main>
+      <nav>
+        <a href="/today-in-history/{{ day.previous.iso }}">
+          <ld-icon name="arrow-double-left" size="sm"></ld-icon>
+          Previous
+        </a>
+        •
+        <a href="/today-in-history/all">Index</a>
+        •
+        <a href="/today-in-history/{{ day.next.iso }}">
+          Next
+          <ld-icon name="arrow-double-right" size="sm"></ld-icon>
+        </a>
+      </nav>
+
+      <h1>{{ title }}</h1>
+      {{ content }}
+    </main>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
