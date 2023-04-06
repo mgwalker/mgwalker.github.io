@@ -8,7 +8,6 @@ won't ever be more here than just this. It's the links below that are cool.
 
 - [Personal README](/readme)
 - [Pottery projects](/pottery-projects) - My pottery projects
-- [My running log](/running) - How much I've run, how fast, etc.
 - [When is going to snow?](/next-snow) - Uses location data from your browser or
   a user-supplied ZIP code to look for the next snow in your forecast.
 - [Atlantic hurricanes](/atlantic-hurricanes) - Scrapes the [National Hurricane
