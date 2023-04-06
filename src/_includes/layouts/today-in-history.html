@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Today in History: {{ title }}</title>
+    <title>Today in History: {{ day.date | default: "All of them" }}</title>
 
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
     <link rel="canonical" href="https://mgwalker.github.io{{ page.url }}" />
@@ -14,7 +14,18 @@
       property="og:url"
       content="https://mgwalker.github.io{{ page.url }}"
     />
-    <meta property="og:title" content="Today in history: {{ title }}" />
+    <meta property="og:title" content="Today in history: {{ day.date | default:
+    "All of them" }}" />
+    <meta
+      property="og:description"
+      content="{% if day %}{{ day.entries[0].year }}: {{ day.entries[0].title }}{% else %}A collection of Today in History comics{% endif %}"
+    />
+    {%- if day %}
+    <meta
+      property="og:image"
+      content="https://mgwalker.github.io/assets/images/today-in-history/{{ day.iso }}_{{ day.entries[0].year }}.jpg"
+    />
+    {%- endif %}
     <meta property="og:type" content="article" />
 
     <style type="text/css">
@@ -58,7 +69,7 @@
         </a>
       </nav>
 
-      <h1>{{ title }}</h1>
+      <h1>{{ day.date }}</h1>
       {{ content }}
     </main>
     <script type="module" src="/js/main.js"></script>
