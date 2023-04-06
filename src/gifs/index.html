@@ -1,7 +1,8 @@
 ---js
 {
   eleventyComputed: {
-    gifs: data => data.gifs.map(g => ({ ...g, static: g.uri.replace(/.gif/, 'h.jpg')}))
+    gifs: data => data.gifs.map(g => ({ ...g, static: g.uri.replace(/.gif/, 'h.jpg')})),
+    title: "pixures"
   }
 }
 ---
