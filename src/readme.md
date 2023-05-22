@@ -11,7 +11,7 @@ title: Personal README
 - **Chapter**: 18F Engineering
 - **Started**: January, 2016
 - **Term out**: January, 2028
-- **Location**: Kansas City, Missouri
+- **Location**: Minneapolis, MN
 - **Working hours**: 8:30 am CT to 5:00 pm CT
 
 ### Skills
