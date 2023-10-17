@@ -46,8 +46,9 @@ _(most recent first)_
 
 - ### National Weather Service weather.gov
 
-  At the time I updated this, we hadn't started the project yet, so...
-  I guess this is a placeholder!
+  We are working with the National Weather Service to entirely rebuild
+  weather.gov. I'm not sure that more detail would be helpful. It's that
+  straightforward and also massive.
 
 - ### 18F Delivery Assurance
 
@@ -172,6 +173,20 @@ _(most recent first)_
   rolled off shortly after bringing on a vendor team. The product is planned
   to go live in 2021, and our product friends at CMS are still driving the eAPD
   ship. This is probably my favorite project from my time at 18F so far.
+
+- ### National Geospatial Intelligence Agency (NGA)
+
+  It wasn't prestigious or secret work. We were mostly helping them figure out
+  how to word procurement documents so they would attract the right vendors
+  and then how to evaluate the vendor responses they got so they could pick
+  a team that would be most likely to deliver successfully.
+
+- ### Department of Labor 14(c)
+
+  We worked with the Department of Labor to try to create a more streamlined
+  application for businesses to get 14(c) certificates. This was an acquisition
+  using 18F's now-deprecated Agile BPA, and my role was mostly post-award
+  management stuff related to technical quality review.
 
 - ### State Medicaid acquisition consulting
 
