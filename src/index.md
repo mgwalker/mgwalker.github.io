@@ -7,6 +7,8 @@ This is just a landing page for the stuff I host on GitHub Pages. There probably
 won't ever be more here than just this. It's the links below that are cool.
 
 - [Personal README](/readme)
+- [Things I've contributed to](/work) - I've been a federal civil servant for
+  over sixteen years. I decided to reflect on what I've done with my time.
 - [Pottery projects](/pottery-projects) - My pottery projects
 - [When is going to snow?](/next-snow) - Uses location data from your browser or
   a user-supplied ZIP code to look for the next snow in your forecast.
