@@ -38,7 +38,16 @@ You, like me, get excited and click those links to discover... a wall of encoded
 text. What the actual heckin' heck? Well it looks like base64 encoding, so let's
 try decoding it and seeing what happens.
 
-Oh, it's still gibberish. Well... time to inspect some code, I guess.
+Oh, it's still gibberish. Well... time to search the internet, I guess.
+
+I found a small number of older forum threads from someone who'd written a
+wrapper around the Amtrak API and exposed their own. It's
+[amtraker-v3](https://github.com/piemadd/amtraker-v3) by
+[piemadd](https://github.com/piemadd/). Digging around in there, I found the
+[main script](https://github.com/piemadd/amtraker-v3/blob/main/index.ts) was
+calling into those same URLs above, and this code had a variable called
+`publicKey`. _Fascinating_. But where does it come from? Time to inspect some
+code, I guess.
 
 Opening up the Firefox dev tools, looking at the resource list, and filtering to
 just Javascript, I found this one file that looks promising:
