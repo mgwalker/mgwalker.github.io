@@ -4,7 +4,7 @@ date: 2023-11-02
 summary: Amtrak doesn't make is super easy to find out where you train is, but it's not impossible. Here's how I did it, and turned their obfuscated API into an open one.
 ---
 
-I had an upsetting experience with Amtrack recently. I had booked passage on a
+I had an upsetting experience with Amtrak recently. I had booked passage on a
 train that went about halfway across the country. I was going to get on it near
 the end of its route and only take it a dozen or so stops. But there were delays
 and the train ended up being several hours behind. Amtrak rebooked me on to a
