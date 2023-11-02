@@ -18,13 +18,12 @@ that purpose.
 
 Have you ever seen [Amtrak's train map](https://www.amtrak.com/track-your-train)?
 It's pretty cool, right? You can see all the active trains, all the stops on
-their route, and arrive and departure times. Neat! And if you're a nerd like me,
-you immediately want to see if there's an API driving this so you can do... I
-don't know, anything you want to with it, I guess.
+their route, and arrival and departure times. Neat! And if you're a nerd like
+me, you immediately want to see if there's an API driving this so you can do...
+I don't know, anything you want to with it, I guess.
 
-And it turns out, there's an API! There are a handful of endpoints, but on a
-first inspection of the browser's network tool shows two particularly
-interesting ones:
+And it turns out, there's an API! There are a handful of endpoints, but a first
+inspection of the browser's network tool shows two particularly interesting ones:
 
 First, a list of all the train stations:
 
@@ -154,8 +153,9 @@ Alright, now what to do with these things? Let's see where else `__$$_jmd` is
 used in the code. I find it referenced in some pretty gnarly-looking code, but
 looking a little above that for context, I find two interesting things:
 
-1. I'm in a callback for XHR request. Adding a breakpoint reveals that this
-   request is for [getTrainsData](https://maps.amtrak.com/services/MapDataService/trains/getTrainsData). Eureka! (Maybe.)
+1. I'm in a callback for an XHR request. Adding a breakpoint reveals that this
+   request is for [getTrainsData](https://maps.amtrak.com/services/MapDataService/trains/getTrainsData).
+   Eureka! (Maybe.)
 2. Look at these amazing comments!
    ```javascript
    /*MasterSegment is the length of the string at the end of the encrypted data that contains the secret key
@@ -183,8 +183,8 @@ var json = JSON.parse(
 );
 ```
 
-Okay, that's kind of a mess. So, first things first, let me try to clean it up
-a bit so I can make sense of what's happening:
+That's kind of a mess. So first things first, let me try to clean it up a bit so
+I can make sense of what's happening:
 
 ```javascript
 const masterSegment = 88;
@@ -282,11 +282,12 @@ decrypt(
 )
 ```
 
-And we have a good idea of what the hash function is:PBKDF2. But what encryption
-algorithm? Well, since this is crypto-js, maybe it has defaults. So I went to
-GitHub and found that the default had very recently been changed. Before that,
-the default had long been AES 128 CBC, so... let's just assume that for now.
-So, given the big encrypted blob response from the
+And we have a good idea of what the key derivation function is: PBKDF2. But what
+hashing function is it using? And what encryption algorithm? Well, since this is
+crypto-js, maybe it has defaults. So I went to GitHub and found that the
+defaults had pretty recently been changed. Before that, the default had long
+been SHA1 and AES-128-CBC, so... let's just assume those are right for now.
+Given the big encrypted blob response from the
 [getTrainsData](https://maps.amtrak.com/services/MapDataService/trains/getTrainsData)
 endpoint, I should be able to get the data basically like this:
 
@@ -299,7 +300,9 @@ MASTER_SEGMENT = 88;
 password = rawData[rawData.length - MASTER_SEGMENT:end]
 encryptedData = rawData[start:rawData.length - MASTER_SEGMENT]
 
-privateKey = pbkdf2(password, SALT, iterations:1000, size:4)
+privateKey = pbkdf2(password, SALT, iterations:1000, size:4, SHA1)
+
+data = decrypt(AES-128-CBC, key, encryptedData))
 ```
 
 And it turns out that's basically correct, as implemented in
@@ -309,7 +312,7 @@ should be 16 bytes. Using Node.js's standard crypto library, you'll want the
 number of bytes, not the number of 4-byte units. (In crypto-js's code, it seems
 to refer to these as words, and they just happen to be 4 bytes long. But the
 word "word" isn't especially meaningful on its own, as it has variously meant
-16, 32, and 64 bites at different times and in different architectures).
+16, 32, and 64 bytes at different times and in different architectures).
 
 So there you go. Now you too can access Amtrak data the easy way. Kudos to
 whoever wrote the Amtrak map page because a) the weird obfuscations they made
