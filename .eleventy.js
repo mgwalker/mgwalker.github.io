@@ -6,6 +6,11 @@ module.exports = (config) => {
 
   config.addPassthroughCopy("src/assets");
 
+  config.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_separator: "<!-- excerpt -->",
+  });
+
   config.on("eleventy.before", async () => {
     await esbuild.build({
       entryPoints: ["src/js/main.js"],

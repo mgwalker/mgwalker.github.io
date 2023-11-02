@@ -27,7 +27,11 @@
       </ld-icon>
     </ld-header>
 
-    <main>{{ content }}</main>
+    <main>
+      <h1>{{ title }}<br /><sub>{{ date | datestamp }}</sub></h1>
+
+      {{ content }}
+    </main>
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>

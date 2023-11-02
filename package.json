@@ -20,8 +20,10 @@
   "homepage": "https://github.com/mgwalker/mgwalker.github.io#readme",
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@emdgroup-liquid/liquid": "^4.4.3",
     "@grimlink/eleventy-plugin-sass": "^1.0.3",
+    "dayjs": "^1.11.10",
     "eleventy-plugin-purgecss": "^0.3.0",
     "esbuild": "^0.17.7",
     "prettier": "^2.8.4",

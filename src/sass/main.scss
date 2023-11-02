@@ -4,6 +4,15 @@ layout: null
 
 @import '@emdgroup-liquid/liquid/dist/css/liquid';
 
+@font-face {
+  font-family: "Public Sans";
+  src: url("/assets/PublicSans-Light.ttf");
+}
+
+:root {
+  --ld-font-body: "Public Sans"
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -24,6 +33,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.5rem;
   background-color: var(--ld-col-neutral-700);
   font-family: var(--ld-font-body);
   color: var(--ld-col-wht);
@@ -33,6 +43,11 @@ body {
     max-width: 800px;
     margin: 0 auto;
     background-color: var(--ld-col-neutral-800);
+
+    h1 sub {
+      font-size: 0.8rem;
+      font-weight: normal;
+    }
 
     a {
       color: var(--ld-col-rb-300);
