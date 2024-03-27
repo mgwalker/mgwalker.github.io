@@ -10,9 +10,8 @@ title: Personal README
 - **Pronouns**: he/him
 - **Chapter**: 18F Engineering
 - **Started**: January, 2016
-- **Term out**: January, 2028
 - **Location**: Minneapolis, MN
-- **Working hours**: 8:30 am CT to 5:00 pm CT
+- **Working hours**: 8:00 am CT to 5:30 pm CT
 
 ### Skills
 
