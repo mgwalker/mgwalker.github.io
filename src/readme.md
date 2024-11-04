@@ -31,6 +31,17 @@ title: Personal README
 - I'm generally pretty flexible, otherwise, and I don't mind changing things up
   if it turns out something isn't working for someone.
 
+### Count on me to...
+
+- Bring some humor and silliness to work. I believe that we can do our best
+  work in places where we can have fun.
+- See the ways our seemingly small work can blossom into huge impacts. We are
+  only with our partners for a fairly short time and sometimes when we leave,
+  it can feel like we didn't do anything. But government is a very long game,
+  and the small things we do today will ripple for years to come.
+- Celebrate our entire team. We do great work here at 18F and we should
+  acknowledge and celebrate our accomplishments.
+
 ### Hobbies and interests
 
 - playing with my dog
@@ -43,11 +54,18 @@ title: Personal README
 
 _(most recent first)_
 
+- ### National Weather Service public API
+
+  This one is brand new. We're still discovering what we're gonna do!
+
 - ### National Weather Service weather.gov
 
-  We are working with the National Weather Service to entirely rebuild
-  weather.gov. I'm not sure that more detail would be helpful. It's that
-  straightforward and also massive.
+  We worked with the National Weather Service to entirely rebuild
+  weather.gov. The site is built on Drupal for its content management
+  needs, templated through Twig, and pulls data from the NWS public API
+  through a Node.js app we call the "interop layer" that puts all the
+  data into the format our Twig templates expect. This is one of the
+  best projects I've worked on at 18F, and it's still ongoing!
 
 - ### 18F Delivery Assurance
 
