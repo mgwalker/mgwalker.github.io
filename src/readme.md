@@ -229,3 +229,66 @@ _(most recent first)_
   The software they were working with caused them significant problems, and we
   proposed several possible paths forward. The project ended before making a
   choice or implementing a solution.
+
+---
+
+## Prior to 18F
+
+Before 18F, I worked as a civilian in the US Army Corps of Engineers (USACE)
+at the Engineer Research and Development Center (ERDC). (I agree, it ought to be
+"Engineering" but nobody asked me.) USACE has a joint military and civil service
+mission. The civil service mission is broad, including things such as
+environmental protection, navigable waterways, managing all public dams, and
+disaster response and relief. The civil mission is mostly staffed by civilian
+personnel. The military mission is to serve all the engineering needs of the US
+Army, and is mostly staffed by military personnel.
+
+- ### Engineered Resilient Systems
+
+  Worked with military services to build tools to help them more thoroughly
+  consider design candidates for new vehicle systems that could meet a wide set
+  of mission requirements over a long period of time. These vehicle designs were
+  deemed "resilient" because they would reduce lifetime operational costs. In
+  essence, we built tools to analyze very large, multidimensional model data
+  to identify clusters of design candidates that satisfied miission constraints
+  so designers and decisionmakers could narrow their focus more quickly. For
+  this work, I was awarded an Army civilian service medal.
+
+- ### Deployable Force Protection
+
+  Worked across various Army offices to support initiatives aimed at keeping
+  military personnel safe in deployment. We helped build tools to translate
+  all sensor inputs into a common protocol that enabled greater integration than
+  was otherwise possible. In a second phase, we proposed and began development
+  of a small drone platform that integrated with the sensor protocol to provide
+  fast visual inspection of sensor-detected threats.
+
+- ### Operation BlueRoof / Rapid Temporary Repair
+
+  Operation BlueRoof and the Rapid Temporary Repair program are FEMA programs
+  intended to help victims of large-scale natural disasters (most typically
+  hurricanes) get back into their homes quickly. BlueRoof provides thick,
+  high-quality blue tarps to act as a temporary roof repair. For other home
+  damage, the Rapid Temporary Repair program could replace windows, doors, and
+  other structural elements. While FEMA operates both programs, USACE is
+  typically tapped to actually execute them.
+
+  My work was focused on converting the paper application process into a more
+  streamlined digital process. By getting people's information into the digital
+  system directly, we removed the burden of manually entering the information
+  from paper forms later and dramatically reduced the risk of paperwork getting
+  lost or destroyed, a high risk in a disaster zone. Our work resulted in the
+  average turnaround time for tarp deployment from about 20 days to about 2 days.
+
+- ### Interagency Performance Evaluation Taskforce (IPET)
+
+  USACE has a large share of responsibility for the flood protection systems
+  along the Mississippi River, including around New Orleans. After Hurricane
+  Katrina in 2005 resulted in widespread flooding and flood control system
+  failure, USACE launched a systemic study to understand what went wrong and
+  how to prevent it happening again. As part of the IPET study team, I led the
+  development and maintenance of the data system that all geospatial data
+  related to the study was loaded into and disseminated from. This included
+  high-resolution LIDAR, satellite spatial photography, aerial photography, and
+  much more. For this work, I was awarded a civilian medal by the Army
+  Chief of Engineers.
