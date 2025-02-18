@@ -25,3 +25,4 @@ won't ever be more here than just this. It's the links below that are cool.
   some of the letters of the alphabet. My interest petered out before I finished
   the alphabet.
 - [Pixures](/gifs) - A small curated collection of gifs.
+- [Pride posts](/pride) - A series of LGBTQ+ Pride posts I wrote for work in 2023.
