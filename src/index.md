@@ -26,3 +26,4 @@ won't ever be more here than just this. It's the links below that are cool.
   the alphabet.
 - [Pixures](/gifs) - A small curated collection of gifs.
 - [Pride posts](/pride) - A series of LGBTQ+ Pride posts I wrote for work in 2023.
+- [African American History Month 2025](/african-american-history-2025) - A series of African American History Month posts I wrote for work in 2025.

@@ -26,11 +26,11 @@ jobs:
 
       - name: build pages
         run: npm run build
-      
+
       - name: upload artifacts
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
       - name: deploy
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
