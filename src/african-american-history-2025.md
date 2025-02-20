@@ -123,7 +123,13 @@ temperature. Dried-plasma technology was abandoned in the United States after
 WWII, but it is seeing renewed interest as the DOD recognizes the value for
 field medics who may not have access to refrigeration.
 
-And let’s not forget Dr. Jocelyn Elders, the first Black Surgeon General of the United States, a determined and outspoken proponent of sex education and contraception. When President Bill Clinton told aides to fire her for talking about condoms, she refused and demanded that he tell her to her face. Not only did she educate a generation of Americans about safer sex, but she forced the president of the United States to confront her directly rather than go quietly. (Learn more about Dr. Elders in [this wonderful episode of _Science Vs_](https://gimletmedia.com/shows/science-vs/n8h8225)).
+And let’s not forget Dr. Jocelyn Elders, the first Black Surgeon General of the
+United States, a determined and outspoken proponent of sex education and
+contraception. When President Bill Clinton told aides to fire her for talking
+about condoms, she refused and demanded that he tell her to her face. Not only
+did she educate a generation of Americans about safer sex, but she forced the
+president of the United States to confront her directly rather than go quietly.
+(Learn more about Dr. Elders in [this wonderful episode of _Science Vs_](https://gimletmedia.com/shows/science-vs/n8h8225)).
 
 All of this to say, healthcare the world over owes a lot to American physicians in general and African American physicians in particular. As ever, African American history is American history.
 
@@ -224,5 +230,42 @@ We’d be living in a wildly different world without the contributions of just
 these two Black Americans. They’ve made our lives better and easier by advancing
 our scientific understanding of the universe and applying that knowledge in
 practical and useful ways. African American history is American history!
+
+Happy African American History Month!
+
+# February 18
+
+There’s nothing more American than rock and roll. An amalgam of American musical
+traditions before it, rock and roll fused jazz, the blues, gospel, country, and
+more. The concept can be traced as far back as a 1867 African-American spiritual
+that evokes the phrase, “rock my soul,” serving us a meaning of “rock” that’s
+still well-understand today. By the 1940s, the term “rock and roll” was used pretty
+frequently to refer to dancing along with rhythm and blues. It wasn’t until the
+1950s, though, that rock and roll emerged as a distinct musical style.
+
+Chuck Berry, an African American guitarist, musician, and singer, is often credited
+with taking piano riffs from the rhythm and blues scene and playing them on guitar.
+In one step, he gave us the immediately-identifiable sound of the rock guitar and
+beat. He’s also sometimes credited as the creator of rock and roll, both for his
+contributions on the guitar and also for the formation of his band. One historian
+claimed that Berry’s band was the first time “all the essential pieces” of rock
+and roll came together.
+
+Another major influence on rock and roll were the Coasters, a Black singing group
+that broke the charts in the 1950s with their hits like _Charlie Brown_, _Poison
+Ivy_, and _Yakety Yak_. The Coasters introduced new musical devices, such as
+comedic bass replies to lyrics. Their innovations were picked up by other rock
+and roll bands throughout the 1960s. Their impact on the development of rock and
+roll music is undeniable, and in 1987, the Coasters became the first group
+inducted into the Rock and Roll Hall of Fame. (Previously all hall inductees
+were individual musicians.) And the Coasters are still touring! (Albeit, the
+membership has changed several times over the years, and none of the original
+members are still with us.)
+
+Anyway, I love a good rock song. It is such an American cultural phenomenon. And
+it’s a great example of how all of American history is entwined with African
+American history; how all of us – White, Black, Native, Asian, etc. – are telling
+the same story. From different perspectives, yes, but still just one story.
+African American history is American history.
 
 Happy African American History Month!
