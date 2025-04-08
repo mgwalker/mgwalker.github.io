@@ -61,11 +61,12 @@ _(most recent first)_
 - ### National Weather Service weather.gov
 
   We worked with the National Weather Service to entirely rebuild
-  weather.gov. The site is built on Drupal for its content management
-  needs, templated through Twig, and pulls data from the NWS public API
-  through a Node.js app we call the "interop layer" that puts all the
-  data into the format our Twig templates expect. This is one of the
-  best projects I've worked on at 18F, and it's still ongoing!
+  weather.gov (not yet launched). The site is built on Drupal for
+  its content management needs, templated through Twig, and pulls
+  data from the NWS public API through a Node.js app we call the
+  "interop layer" that puts all the data into the format our Twig
+  templates expect. This is one of the best projects I've worked
+  on at 18F, and it's still ongoing!
 
 - ### 18F Delivery Assurance
 
