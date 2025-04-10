@@ -7,14 +7,23 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,maximum-scale=2" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css"
-      integrity="sha512-kSwGoyIkfz4+hMo5jkJngSByil9jxJPKbweYec/UgS+S1EgE45qm4Gea7Ks2oxQ7qiYyyZRn66A9df2lMtjIsw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="canonical" href="https://mgwalker.github.io{{ page.url }}" />
+
+    <meta
+      property="og:url"
+      content="https://mgwalker.github.io{{ page.url }}"
+    />
+    <meta property="og:title" content="{{ title }}" />
+    {%- if meta.description %}
+    <meta property="og:description" content="{{ meta.description}}" />
+    {%- endif %}
+    <meta property="og:image" content="{{ meta.image}}" />
+    {%- if meta.image %}
+    {%- if meta.imageAlt %}
+    <meta property="og:image:alt" content="{{ meta.imageAlt}}" />
+    {%- endif %}
+    {%- endif %}
   </head>
   <body>
     <ld-header
@@ -26,7 +35,6 @@
         <img src="/assets/images/cooger.svg" style="width: 24px" />
       </ld-icon>
     </ld-header>
-
     <main>{{ content }}</main>
     <script type="module" src="/js/main.js"></script>
   </body>

@@ -4,8 +4,6 @@ date: null
 eleventyExcludeFromCollections: true
 ---
 
-Hello
-
 <ul>
 {% for blog in collections.blog %}
   <li>

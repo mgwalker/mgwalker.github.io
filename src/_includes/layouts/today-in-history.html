@@ -1,78 +1,42 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+---
+layout: layouts/default
+eleventyComputed:
+  title: "Today in History » {% if day.date %}{{ day.date }}{% else %}All of them{% endif %}"
+  meta:
+    description: "{% if day %}{{ day.entries[0].year }}: {{ day.entries[0].title }}{% else %}A collection of Today in History comics{% endif %}"
+    image: "{% if day %}https://mgwalker.github.io/assets/images/today-in-history{{ day.iso}}_{{ day.entries[0].year }}.jpg{% endif %}"
+    imageAlt: "{% if day %}{{ day.entries[0].caption }}{% endif %}"
+---
 
-    <title>Today in History: {{ day.date | default: "All of them" }}</title>
+<div id="today-in-history">
+  <nav>
+    <a href="/today-in-history/{{ day.previous }}">
+      <ld-icon name="arrow-double-left" size="sm"></ld-icon>
+      Previous
+    </a>
+    •
+    <a href="/today-in-history/all">Index</a>
+    •
+    <a href="/today-in-history/{{ day.next }}">
+      Next
+      <ld-icon name="arrow-double-right" size="sm"></ld-icon>
+    </a>
+  </nav>
 
-    <link rel="stylesheet" type="text/css" href="/css/main.css" />
-    <link rel="canonical" href="https://mgwalker.github.io{{ page.url }}" />
-
-    <meta
-      property="og:url"
-      content="https://mgwalker.github.io{{ page.url }}"
-    />
-    <meta property="og:title" content="Today in history: {{ day.date | default:
-    "All of them" }}" />
-    <meta
-      property="og:description"
-      content="{% if day %}{{ day.entries[0].year }}: {{ day.entries[0].title }}{% else %}A collection of Today in History comics{% endif %}"
-    />
-    {%- if day %}
-    <meta
-      property="og:image"
-      content="https://mgwalker.github.io/assets/images/today-in-history/{{ day.iso }}_{{ day.entries[0].year }}.jpg"
-    />
-    <meta property="og:image:alt" content="{{ day.entries[0].caption }}" />
-    {%- endif %}
-    <meta property="og:type" content="article" />
-
-    <style type="text/css">
-      nav {
-        float: right;
-        text-align: center;
-      }
-
-      div + div {
-        border-top: 2px solid var(--ld-col-rb-200);
-      }
-
-      figure img {
-        max-width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <ld-header
-      site-name="mgwalker.github.io » Today in History"
-      logo-url="/"
-      sticky
-    >
-      <ld-icon size="lg" slot="logo">
-        <img src="/assets/images/cooger.svg" style="width: 24px" />
-      </ld-icon>
-    </ld-header>
-
-    <main>
-      <nav>
-        <a href="/today-in-history/{{ day.previous.iso }}">
-          <ld-icon name="arrow-double-left" size="sm"></ld-icon>
-          Previous
-        </a>
-        •
-        <a href="/today-in-history/all">Index</a>
-        •
-        <a href="/today-in-history/{{ day.next.iso }}">
-          Next
-          <ld-icon name="arrow-double-right" size="sm"></ld-icon>
-        </a>
-      </nav>
-
-      <h1>{{ day.date }}</h1>
-      {{ content }}
-    </main>
-    <script type="module" src="/js/main.js"></script>
-  </body>
-</html>
+  <h1>{{ day.date }}</h1>
+  {% for img in day.entries %}
+  <div>
+    <h3>{{ img.year }}</h3>
+    <figure>
+      <img
+        src="/assets/images/today-in-history/{{ day.iso }}_{{ img.year }}.jpg"
+        alt="{{ img.caption }}"
+      />
+      <figcaption class="sr-only">
+        {{ day.date}} {{ img.year }}: {{ img.title }}
+      </figcaption>
+    </figure>
+  </div>
+  {% endfor %}
+  {{content}}
+</div>

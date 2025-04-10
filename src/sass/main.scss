@@ -2,7 +2,7 @@
 layout: null
 ---
 
-@import '@emdgroup-liquid/liquid/dist/css/liquid';
+@import "@emdgroup-liquid/liquid/dist/css/liquid";
 
 @font-face {
   font-family: "Public Sans";
@@ -10,7 +10,7 @@ layout: null
 }
 
 :root {
-  --ld-font-body: "Public Sans"
+  --ld-font-body: "Public Sans";
 }
 
 html {
@@ -61,12 +61,11 @@ body {
 
     & > ul li {
       margin: var(--ld-sp-16) 0;
-
     }
 
     blockquote {
-      background: rgba(0,0,0,0.3);
-      border: 1px solid rgba(255,255,255, 0.3);
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       padding: 0.1rem 1rem;
     }
 
@@ -106,5 +105,20 @@ body {
         padding: 5px;
       }
     }
+  }
+}
+
+#today-in-history {
+  nav {
+    float: right;
+    text-align: center;
+  }
+
+  div + div {
+    border-top: 2px solid var(--ld-col-rb-200);
+  }
+
+  figure img {
+    max-width: 100%;
   }
 }

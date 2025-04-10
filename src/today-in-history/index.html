@@ -1,27 +1,13 @@
 ---js
 {
   eleventyComputed: {
-    day: data => ({
-      ...data.days.pop(),
-      next: data.days[0],
-      previous: data.days.pop()
-    }),
-    title: data => data.day.date
+    "day": data => data.today,
+    "title": data => `Today in History » ${data.today.date}`,
+    "meta": {
+      "description": data => `${data.today.entries[0].year}: ${data.today.entries[0].title}`,
+      "image": data => `https://mgwalker.github.io/assets/images/today-in-history/${data.today.iso}_${data.today.entries[0].year}.jpg`,
+      "imageAlt": data => data.today.entries[0].caption
+    }
   }
 }
 ---
-
-{% for img in day.entries %}
-<div>
-  <h3>{{ img.year }}</h3>
-  <figure>
-    <img
-      src="/assets/images/today-in-history/{{ day.iso }}_{{ img.year }}.jpg"
-      alt="{{ img.caption }}"
-    />
-    <figcaption class="sr-only">
-      {{ day.date}} {{ img.year }}: {{ img.title }}
-    </figcaption>
-  </figure>
-</div>
-{% endfor %}

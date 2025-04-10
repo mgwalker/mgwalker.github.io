@@ -12,6 +12,11 @@ module.exports = (config) => {
   config.addPlugin(sassPlugin, { sass });
   config.addPlugin(syntaxHighlight);
 
+  config.addFilter(
+    "json",
+    (o) => `<pre><code>${JSON.stringify(o, null, 2)}</code></pre>`
+  );
+
   config.addFilter("datestamp", (date) => {
     if (date) {
       return dayjs(date).utc().format("D MMMM YYYY");
