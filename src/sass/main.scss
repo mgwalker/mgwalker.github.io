@@ -277,5 +277,13 @@ body {
         }
       }
     }
+
+    &.white {
+      div {
+        border: 2px solid #ccc;
+        border-right: 0;
+        border-bottom: 0;
+      }
+    }
   }
 }
