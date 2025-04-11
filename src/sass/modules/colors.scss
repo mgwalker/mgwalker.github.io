@@ -1,0 +1,48 @@
+:root {
+  --bg-wash: rgb(173, 210, 241);
+  --bg-header: #0f69af;
+  --bg-body: white;
+  --text-primary: black;
+  --text-header: white;
+  --text-link: rgb(15, 105, 175);
+  --text-link-hover: rgb(150, 16, 91);
+  --text-link-visited: rgb(80, 50, 145);
+  --text-footer-link: white;
+
+  @media (prefers-color-scheme: dark) {
+    --bg-wash: rgb(15, 26, 46);
+    --bg-header: rgb(10, 59, 97);
+    --bg-body: rgb(0, 28, 56);
+    --text-primary: rgb(199, 199, 209);
+    --text-header: rgb(199, 199, 209);
+    --text-link: rgb(173, 210, 241);
+    --text-link-hover: rgb(244, 137, 150);
+    --text-link-visited: rgb(192, 155, 251);
+  }
+}
+
+html {
+  &.ui-mode--light {
+    --bg-wash: rgb(173, 210, 241);
+    --bg-header: #0f69af;
+    --bg-body: white;
+
+    --text-primary: black;
+    --text-header: white;
+
+    --text-link: rgb(15, 105, 175);
+    --text-link-hover: rgb(150, 16, 91);
+    --text-link-visited: rgb(80, 50, 145);
+  }
+
+  &.ui-mode--dark {
+    --bg-wash: rgb(15, 26, 46);
+    --bg-header: rgb(10, 59, 97);
+    --bg-body: rgb(0, 28, 56);
+    --text-primary: rgb(199, 199, 209);
+    --text-header: rgb(199, 199, 209);
+    --text-link: rgb(173, 210, 241);
+    --text-link-hover: rgb(244, 137, 150);
+    --text-link-visited: rgb(192, 155, 251);
+  }
+}

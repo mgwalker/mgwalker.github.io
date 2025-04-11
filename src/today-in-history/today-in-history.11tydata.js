@@ -2273,7 +2273,7 @@ module.exports = {
   days,
   today: {
     ...days[todayIndex],
-    next,
-    previous,
+    next: days[next].iso,
+    previous: days[previous].iso,
   },
 };

@@ -1,3 +1,9 @@
-import { defineCustomElements } from "@emdgroup-liquid/liquid/dist/loader";
+window.toggleUIMode = (mode) => {
+  const root = document.querySelector("html");
+  root.classList.remove("ui-mode--dark");
+  root.classList.remove("ui-mode--light");
 
-defineCustomElements();
+  if (mode) {
+    root.classList.add(`ui-mode--${mode}`);
+  }
+};

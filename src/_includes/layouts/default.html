@@ -9,10 +9,16 @@ layout: layouts/base.html
       mgwalker.github.io{% if title != blank %} » {{ title }}{% endif %}
     </title>
     <meta charset="utf-8" />
+    <meta name="color-scheme" content="dark light" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,maximum-scale=2" />
-    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link preload rel="stylesheet" type="text/css" href="/css/main.css" />
     <link rel="canonical" href="https://mgwalker.github.io{{ page.url }}" />
+
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
 
     <meta
       property="og:url"
@@ -28,16 +34,25 @@ layout: layouts/base.html
     {%- endif %} {%- endif %}
   </head>
   <body>
-    <ld-header
-      site-name="mgwalker.github.io{% if title != blank %} » {{ title }}{% endif %}"
-      logo-url="/"
-      sticky
-    >
-      <ld-icon size="lg" slot="logo">
-        <img src="/assets/images/it-me.png" style="width: 24px" alt="" />
-      </ld-icon>
-    </ld-header>
+    <header>
+      <a href="/"><img src="/assets/images/it-me.png" alt="go home" /></a>
+      mgwalker.github.io{%if title != blank %} » {{ title }}{% endif %}
+      <div style="float: right; font-weight: normal" aria-hidden="true">
+        <a href="#" onClick="toggleUIMode('light')">light</a>
+        /
+        <a href="#" onClick="toggleUIMode('dark')">dark</a>
+        /
+        <a href="#" onClick="toggleUIMode()">system</a>
+      </div>
+    </header>
+
     <main>{{ content }}</main>
-    <script type="module" src="/js/main.js"></script>
+
+    <footer>
+      <a href="https://toot.darkcooger.net/@mgwalker">Mastodon</a>
+      | <a href="https://github.com/mgwalker">GitHub</a>
+    </footer>
+
+    <script async type="module" src="/js/main.js"></script>
   </body>
 </html>

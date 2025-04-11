@@ -4,6 +4,8 @@ const esbuild = require("esbuild");
 module.exports = (config) => {
   configurePlugins(config);
 
+  config.ignores.add("src/sass/modules/**/*.scss");
+
   config.addPassthroughCopy("src/assets");
 
   config.setFrontMatterParsingOptions({
