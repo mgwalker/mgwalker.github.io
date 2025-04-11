@@ -23,11 +23,9 @@ layout: layouts/base.html
     <meta property="og:description" content="{{ meta.description}}" />
     {%- endif %}
     <meta property="og:image" content="{{ meta.image}}" />
-    {%- if meta.image %}
-    {%- if meta.imageAlt %}
+    {%- if meta.image %} {%- if meta.imageAlt %}
     <meta property="og:image:alt" content="{{ meta.imageAlt}}" />
-    {%- endif %}
-    {%- endif %}
+    {%- endif %} {%- endif %}
   </head>
   <body>
     <ld-header
@@ -36,7 +34,7 @@ layout: layouts/base.html
       sticky
     >
       <ld-icon size="lg" slot="logo">
-        <img src="/assets/images/it-me.png" style="width: 24px" />
+        <img src="/assets/images/it-me.png" style="width: 24px" alt="" />
       </ld-icon>
     </ld-header>
     <main>{{ content }}</main>
