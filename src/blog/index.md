@@ -5,7 +5,7 @@ eleventyExcludeFromCollections: true
 ---
 
 <ul>
-{% for blog in collections.blog %}
+{% for blog in collections.blog reversed %}
   <li>
     <h3><a href="{{ blog.url }}">{{ blog.data.title }}</a> ({{ blog.data.date | datestamp }})</h3>
     {% if blog.data.summary %}{{ blog.data.summary }}{% endif %}
