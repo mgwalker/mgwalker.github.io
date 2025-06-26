@@ -4,10 +4,16 @@ const purgeCssPlugin = require("eleventy-plugin-purgecss");
 const sassPlugin = require("@grimlink/eleventy-plugin-sass");
 const sass = require("sass");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const markdownIt = require("markdown-it");
+const markdownAttr = require("markdown-it-attrs");
 
 dayjs.extend(utc);
 
 module.exports = (config) => {
+  const mdParser = markdownIt();
+  mdParser.use(markdownAttr);
+  config.setLibrary("md", mdParser);
+
   config.addPlugin(purgeCssPlugin);
   config.addPlugin(sassPlugin, { sass });
   config.addPlugin(syntaxHighlight);
