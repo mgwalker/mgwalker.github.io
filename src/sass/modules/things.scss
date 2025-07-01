@@ -1,0 +1,32 @@
+thing-group {
+  & * {
+    display: block;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  thing-group-description {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
+
+  thing-container {
+    display: flex;
+
+    a-thing {
+      width: 33%;
+      margin: 0.5rem;
+
+      thing-title {
+        display: block;
+        font-size: 1.2em;
+        font-weight: 800;
+      }
+
+      thing-description {
+      }
+    }
+  }
+}

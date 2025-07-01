@@ -10,7 +10,9 @@ const markdownAttr = require("markdown-it-attrs");
 dayjs.extend(utc);
 
 module.exports = (config) => {
-  const mdParser = markdownIt();
+  const mdParser = markdownIt({
+    html: true,
+  });
   mdParser.use(markdownAttr);
   config.setLibrary("md", mdParser);
 

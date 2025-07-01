@@ -1,0 +1,101 @@
+
+- group: About me
+  description: >
+    These are some things that are kind of about me. If you're interested in
+    how I work or the kinds of things I work on, this section is for you.
+  things:
+    - name: Personal README
+      url: /readme
+      about: >
+        A personal README is a great place to tell colleagues about how you like
+        to work. This is mine!
+    - name: Things I contributed to
+      url: /work
+      about: >
+        I was a federal civil servant for over 17 years. I decided to reflect
+        on what I've done with my time.
+
+- group: Writings
+  description: >
+    Some things I've written.
+  things:
+    - name: Blog
+      url: /blog
+      about: >
+        I don't often think about typing up my thoughts into blog posts, but
+        every now and then, I remember. And this is them.
+    - name: Pride posts, 2023
+      url: /pride
+      about: >
+        A series of LGBTQ+ Pride posts I wrote for work in 2023.
+    - name: African American History Month 2025
+      url: /african-american-history-2025
+      about: >
+        A series of posts about African American history I wrote for work in
+        2025. My position was eliminated and I was effectively fired by DOGE
+        before I could finish the month.
+
+- group: Drawings
+  description: >
+    I like to draw. It brings me joy. Here are some of my drawing collections.
+  things:
+    - name: Today in History
+      url: /today-in-history
+      about: >
+        Silly illustrations of significant events in history. I didn't make it
+        through a full calendar year before I stopped doing them. Sorry 'bout
+        it.
+    - name: Alphabet of Animals
+      url: /animals
+      about: >
+        Drawings of animals for each letter of the alphabet with almost 100%
+        entirely real animals!
+    - name: Alphabet of Cartoon Characters
+      url: /toons
+      about: >
+        Drawings of cartoon characters for some of the letters of the alphabet.
+        My interest in the project petered out before I finished.
+
+- group: Weather
+  description: >
+    I'm a weather nerd. I love watching an outbreak of thunderstorms or trying
+    to guess how much snow we might get. To that end, I've used the National
+    Weather Service public API to build some sites for myself.
+  things:
+    - name: When is going to snow?
+      url: /next-snow
+      about: >
+        A page that uses your location data or a ZIP code you type in to look
+        for the next snow in your forecast.
+    - name: Atlantic hurricanes
+      url: /atlantic-hurricanes
+      about: >
+        A different presentation of the information available from the National
+        Hurricane Center. Scraped directly from the source on a regular basis.
+    - name: Storm Prediction Center
+      url: /spc
+      about: >
+        A different presentation of the next 3 days' convective outlooks from
+        the Storm Prediction Center (SPC). It uses GIS data directly from SPC,
+        plus a little text parsing to handle the discussion.
+
+- group: Odds and ends
+  description: >
+    And a few other things I've done that don't really fit any particular theme.
+  things:
+    - name: Pottery projects
+      url: /pottery-projects
+      about: >
+        Some of my early pottery projects. I lost interest in keeping it
+        updated pretty early into my pottery practice.
+    - name: CSS sphere
+      url: /css-sphere
+      about: >
+        I was introduced to CSS's 3D transformations, so naturally I wondered
+        if it was possible to make a globe in just CSS. The answer is... kinda!
+        (Not really. This uses a lot of Javascript to update the CSS transforms
+        over time.) Anyway, here's what I came up with. It's janky!
+    - name: Pixures
+      url: /gifs
+      about: >
+        A small, curated collection of GIFs that I like.

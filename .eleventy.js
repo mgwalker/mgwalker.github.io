@@ -1,19 +1,20 @@
-const { configurePlugins } = require("./config");
+const configure = require("./config");
 const esbuild = require("esbuild");
+const yaml = require("js-yaml");
 
-module.exports = (config) => {
-  configurePlugins(config);
+module.exports = (eleventyConfig) => {
+  configure(eleventyConfig);
 
-  config.ignores.add("src/sass/modules/**/*.scss");
+  eleventyConfig.ignores.add("src/sass/modules/**/*.scss");
 
-  config.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/assets");
 
-  config.setFrontMatterParsingOptions({
+  eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_separator: "<!-- excerpt -->",
   });
 
-  config.on("eleventy.before", async () => {
+  eleventyConfig.on("eleventy.before", async () => {
     await esbuild.build({
       entryPoints: ["src/js/main.js"],
       bundle: true,
@@ -22,7 +23,10 @@ module.exports = (config) => {
     });
   });
 
+  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
+  eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
+
   return {
-    dir: { input: "src", output: "site" },
+    dir: { input: "src", output: "site", data: "_data" },
   };
 };
