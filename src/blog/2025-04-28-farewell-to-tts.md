@@ -3,7 +3,7 @@ title: Farewell to TTS
 date: 2025-04-28
 ---
 
-![](/assets/images/blog/2025-04-28-greg-message.png) {.center}
+![](/assets/blog/2025-04-28/greg-message.png) {.center}
 
 Dear TTS friends,
 
@@ -14,7 +14,7 @@ moment to say farewell.
 
 This isn't how I planned to go. In fact, I didn't plan to go at all.
 
-![Animated clip of Dr. Who saying, 'I don't want to go.'](/assets/images/blog/2025-04-28-dr-who.webp) {.center}
+![Animated clip of Dr. Who saying, 'I don't want to go.'](/assets/blog/2025-04-28/dr-who.webp) {.center}
 
 Back in 2019, when my first term was drawing to a close, I started putting
 together a doc of what I'd say in my farewell email, if that came to pass, but
@@ -49,7 +49,7 @@ feedback session where our users were... not angry at us. A year later, one of
 the original research participants sat on a panel at a conference alongside one
 of our product owners evangelizing eAPD to everyone in attendance.
 
-![Screenshot from a video meeting of CMS eAPD product owners being delightfully shocked](/assets/images/blog/2025-04-28-product-owners.png) {.center}
+![Screenshot from a video meeting of CMS eAPD product owners being delightfully shocked](/assets/blog/2025-04-28/product-owners.png) {.center}
 
 We also knew how to bring joy. Look at our eAPD product owners up there! TTS
 understands that delivery is the strategy, and when our partners see that
@@ -66,7 +66,7 @@ value others' experiences, show compassion, and be silly.
 
 Be like this giraffe.
 
-![Animation of a cartoon giraffe strutting, its head bopping wildly back and forth.](/assets/images/blog/2025-04-28-giraffe-strut.gif) {.center}
+![Animation of a cartoon giraffe strutting, its head bopping wildly back and forth.](/assets/blog/2025-04-28/giraffe-strut.gif){.bg-white} {.center}
 
 I hope we can stay in touch. If you don't know how to reach me outside of GSA,
 ping me at shy.king4809@fastmail.com and I'll pass along my real info!
@@ -74,7 +74,7 @@ ping me at shy.king4809@fastmail.com and I'll pass along my real info!
 Take care, my friends. The American people are better off because we have been
 here. Never forget that.
 
-![An image in the style of 1980s school yearbooks with a grid at the bottom, a star field at the top, and some kind of wild pink laser beam separating them. At the top is the text "Maximum GREG" in a Miami Vice-like font. Below is a picture of Greg screaming through a fracture in the grid.](/assets/images/blog/2025-04-28-maximum-greg.png) {.center}
+![An image in the style of 1980s school yearbooks with a grid at the bottom, a star field at the top, and some kind of wild pink laser beam separating them. At the top is the text "Maximum GREG" in a Miami Vice-like font. Below is a picture of Greg screaming through a fracture in the grid.](/assets/blog/2025-04-28/maximum-greg.png) {.center}
 
 --  
 Greg Walker (he/him)

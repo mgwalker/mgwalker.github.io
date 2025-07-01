@@ -4,9 +4,11 @@
 @forward "./modules/pride.scss";
 @forward "./modules/today-in-history.scss";
 
+@forward "./modules/utility/colors.scss";
+
 @font-face {
   font-family: "Public Sans";
-  src: url("/assets/PublicSans-Light.ttf");
+  src: url("/assets/fonts/PublicSans-Light.ttf");
 }
 
 :root {

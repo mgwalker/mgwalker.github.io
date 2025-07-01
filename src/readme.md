@@ -8,8 +8,6 @@ title: Personal README
 
 - **Name pronunciation**: gr-EGG WALL-ker
 - **Pronouns**: he/him
-- **Chapter**: 18F Engineering
-- **Started**: January, 2016
 - **Location**: Minneapolis, MN
 - **Working hours**: 8:00 am CT to 5:30 pm CT
 
@@ -39,8 +37,8 @@ title: Personal README
   only with our partners for a fairly short time and sometimes when we leave,
   it can feel like we didn't do anything. But government is a very long game,
   and the small things we do today will ripple for years to come.
-- Celebrate our entire team. We do great work here at 18F and we should
-  acknowledge and celebrate our accomplishments.
+- Celebrate our entire team. We should acknowledge and celebrate our
+  accomplishments together.
 
 ### Hobbies and interests
 
@@ -50,35 +48,63 @@ title: Personal README
 - drawing
 - pottery
 
-### Projects I've worked on
+## Time at 18F
+
+From January 2016 through April 2025, I worked at [18F](https://18f.org), which
+was a federal digital services agency. Our office was abolished by DOGE in a
+politically-motivated takedown. We were an incredibly competent organization
+and we did some really valuable work for the American people. My heart and soul
+are in public service, and I thrived at 18F in a way I never expected that I
+could. I am extremely proud of the work I did there.
+
+### Projects I worked on
 
 _(most recent first)_
 
 - ### National Weather Service public API
 
-  This one is brand new. We're still discovering what we're gonna do!
+  As part of our work on weather.gov (see below), we began digging into issues
+  of data quality and availability. We suggested to the National Weather Service
+  (NWS) that it would be a good idea to spin up a separate project to better
+  understand the various data streams being generated and dissiminated across
+  all of NWS. We began with a deep dive into the NWS public API, including its
+  backing data sources, and how data flowed from orgination and ultimately
+  landed in the API. This led us to conclude that the NWS's existing data
+  facilities were very robust, and we recommended that NWS focus its attention
+  on strengthening those foundations rather than building anything new. We
+  identified that the existing system, called NGITWS, was well-designed and
+  should serve their needs well, given the resources it needed.
+
+  That settled, we then moved into a phase of building new API endpoints to
+  better serve the needs of weather.gov, and kicked off the very early phases
+  of user research to understand broader improvements to make the API more
+  accessible and useful to the general public and members of the weather
+  enterprise, including global government entities and commercial providers.
+
+  Unfortunately, my work on the project came to an abrupt end when DOGE decided
+  to eliminate 18F in the middle of the night on a weekend, because they are
+  cowards.
 
 - ### National Weather Service weather.gov
 
-  We worked with the National Weather Service to entirely rebuild
-  weather.gov (not yet launched). The site is built on Drupal for
-  its content management needs, templated through Twig, and pulls
-  data from the NWS public API through a Node.js app we call the
-  "interop layer" that puts all the data into the format our Twig
-  templates expect. This is one of the best projects I've worked
+  We worked with the National Weather Service to entirely rebuild weather.gov
+  (not yet launched). The site is built on Drupal for its content management
+  needs, templated through Twig, and pulls data from the NWS public API through
+  a Node.js app we call the "interop layer" that puts all the data into the
+  format our Twig templates expect. This is one of the best projects I've worked
   on at 18F, and it's still ongoing!
 
 - ### 18F Delivery Assurance
 
-  Recurring. As of February 2023, this is where 18F staff go when they're
-  between projects. It's a team that works on various 18F products that are
+  Recurring. As of February 2023, this was where 18F staff go when they're
+  between projects. It was a team that worked on various 18F products that are
   otherwise difficult to maintain due to our funding structure.
 
 - ### Team Talent support for TTSJobs site
 
-  The TTSJobs site is how our Talent Team advertises job openings to the world.
-  It's been difficult for the Talent Team members to add new jobs because the
-  pages are littered with conditional logic, in the Liquid template language,
+  The TTSJobs site was how our Talent Team advertised job openings to the world.
+  It was difficult for the Talent Team members to add new jobs because the
+  pages were littered with conditional logic, in the Liquid template language,
   embedded in Markdown, relying heavily on frontmatter. The gist of my work was
   to make it easier for Talent to create and update job postings. This included
   a major overhaul to the base template they start with, moving logic into
@@ -88,11 +114,11 @@ _(most recent first)_
 
   A small internal-to-18F team worked on a model of sustainable long-term
   product maintance, optimizing for rapidly onboarding and offboarding other
-  18F staff when they are briefly between projects. We have several internal
-  products (such as the [UX Guide](https://ux-guide.18f.gov/)) that are tough to
-  maintain with staff on billable projects all the time, and our work was to
-  find ways to make it easier for staff to drop in and out of maintaining these
-  kinds of products.
+  18F staff when they are briefly between projects. We had several internal
+  products (such as the [UX Guide](https://guides.18f.org/ux-guide)) that are
+  tough to maintain with staff on billable projects all the time, and our work
+  was to find ways to make it easier for staff to drop in and out of maintaining
+  these kinds of products.
 
 - ### OCC de-risking workshops
 
@@ -140,10 +166,10 @@ _(most recent first)_
   to figure out ways to improve outcomes. This was a research-intensive project
   that involved a bunch of interviews, and we learned a bunch about the
   incentives at play. In coordination with our partners at CMS, we wrote a
-  report that outlined our findings and offered some proposals for how to
-  improve the odds of contracts producing value. Our recommendations touched on
-  the roles of CMS, the states, and the IT vendors, and were well-received by
-  everyone involved, including the vendor community.
+  [report that outlined our findings and offered some proposals](/assets/docs/CMS_Contract_Terminations_Recommendations_Report.pdf)
+  for how to improve the odds of contracts producing value. Our recommendations
+  touched on the roles of CMS, the states, and the IT vendors, and were
+  well-received by everyone involved, including the vendor community.
 
 - ### NASA SBIR
 
@@ -162,8 +188,9 @@ _(most recent first)_
   CHIP services. 18F was co-developing the app with a vendor team. I joined the
   project in-progress. While everyone on the team - CMS, 18F, and the vendor -
   was committed to the work and trying their best, for various reasons, the
-  project was not successful. In this project, we had to navigate some difficult
-  interpersonal issues and terminate our engagement early.
+  project was not going well. In this project, we had to navigate some difficult
+  interpersonal issues and terminate our engagement early. CMS and the vendor
+  team continued on, however.
 
 - ### USFS firewoord permitting
 
@@ -173,7 +200,8 @@ _(most recent first)_
   quality assurance. I joined the project in-progress. Unfortunately, our USFS
   teammates weren't in a good position to properly own and manage the product at
   the time, largely due to being shorthanded and very busy with other tasks, so
-  the project ended early.
+  the project ended early. However, USFS picked this work up again later on
+  their own!
 
 - ### 10x phase ones
 
@@ -189,8 +217,10 @@ _(most recent first)_
   called eAPD. We worked with CMS product leads on building the tool while also
   helping them practice product management and ownership for about 3 years. We
   rolled off shortly after bringing on a vendor team. The product is planned
-  to go live in 2021, and our product friends at CMS are still driving the eAPD
-  ship. This is probably my favorite project from my time at 18F so far.
+  went live in 2021, and our product friends at CMS are still driving the eAPD
+  ship. This was my favorite project at 18F until I worked with the National
+  Weather Service, though eAPD will forever hold a very special place in my
+  heart.
 
 - ### National Geospatial Intelligence Agency (NGA)
 
