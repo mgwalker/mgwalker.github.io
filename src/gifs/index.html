@@ -15,14 +15,15 @@
     <input id="search-bar-input" type="text" placeholder="search" />
   </div>
 
-  <div class="image-grid">
+  <div class="flex">
     {% for img in gifs %}
-    <div class="grid-cell" data-tags="{{ img.name }} {{ img.tags | join }}">
+    <div class="cell" data-tags="{{ img.name }} {{ img.tags | join }}">
       <div>{{ img.name }}</div>
       <a>
         <img
           alt="{{ img.name }}"
           src="{{ img.static }}"
+          class="mw-100"
           onmouseenter="this.src='{{ img.uri }}'"
           onmouseleave="this.src='{{img.static }}'"
           onclick="document.getElementById('copy-box').value = '{{ img.uri }}'; document.getElementById('copy-box').select(); document.execCommand('copy'); showCopyDialog();"
@@ -44,11 +45,11 @@
       notification.setAttribute("class", "show");
       setNotificationFadeTimeout = setTimeout(
         () => notification.setAttribute("class", "fade"),
-        500
+        500,
       );
       setNotificationHideTimeout = setTimeout(
         () => notification.setAttribute("class", ""),
-        3000
+        3000,
       );
     }
 

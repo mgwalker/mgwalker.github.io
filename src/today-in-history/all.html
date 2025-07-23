@@ -2,9 +2,9 @@
 title: All of them
 ---
 
-<div class="image-grid left">
+<div class="flex">
   {% for day in days %}
-  <div class="grid-cell">
+  <div class="cell">
     <h2><a href="/today-in-history/{{ day.iso }}">{{ day.date }}</a></h2>
     <ul>
       {% for entry in day.entries %}

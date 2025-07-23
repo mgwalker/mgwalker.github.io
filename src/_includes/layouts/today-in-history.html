@@ -9,21 +9,30 @@ eleventyComputed:
 ---
 
 <div id="today-in-history">
+  {% if day.previous or day.next %}
   <nav>
+    {% if day.previous %}
     <a href="/today-in-history/{{ day.previous }}">
       <ld-icon name="arrow-double-left" size="sm"></ld-icon>
       Previous
     </a>
     •
+    {% endif %}
     <a href="/today-in-history/all">Index</a>
+    {% if day.next %}
     •
     <a href="/today-in-history/{{ day.next }}">
       Next
       <ld-icon name="arrow-double-right" size="sm"></ld-icon>
     </a>
+    {% endif %}
   </nav>
+  {% endif %}
 
+  {% if day.date %}
   <h1>{{ day.date }}</h1>
+  {% endif %}
+
   {% for img in day.entries %}
   <div>
     <h3>{{ img.year }}</h3>
@@ -37,6 +46,5 @@ eleventyComputed:
       </figcaption>
     </figure>
   </div>
-  {% endfor %}
-  {{content}}
+  {% endfor %} {{content}}
 </div>

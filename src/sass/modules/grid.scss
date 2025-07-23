@@ -1,0 +1,15 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .cell {
+    width: calc(33% - 2rem);
+    margin: 1rem;
+
+    @media screen and (max-width: 640px) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}

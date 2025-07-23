@@ -2,6 +2,7 @@
 @forward "./modules/colors.scss";
 @forward "./modules/things.scss";
 @forward "./modules/gifs.scss";
+@forward "./modules/grid.scss";
 @forward "./modules/pride.scss";
 @forward "./modules/today-in-history.scss";
 
@@ -127,4 +128,8 @@ body {
       padding: 1rem 0;
     }
   }
+}
+
+.mw-100 {
+  max-width: 100%;
 }

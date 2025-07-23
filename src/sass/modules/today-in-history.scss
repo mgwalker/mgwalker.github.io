@@ -8,28 +8,7 @@
     max-width: 100%;
   }
 
-  .image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80vw;
-    margin: 0 auto;
-    justify-content: left;
-    align-items: top;
-
-    .grid-cell {
-      width: calc(250px - 2rem);
-      text-align: center;
-      margin: 2rem;
-    }
-
-    &.left .grid-cell {
-      text-align: left;
-    }
-
-    .grid-cell img {
-      max-height: calc(100% - 10px);
-      max-width: calc(100% - 10px);
-      padding: 5px;
-    }
+  .flex .cell ul {
+    padding: 0;
   }
 }

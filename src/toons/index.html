@@ -2,13 +2,14 @@
 title: Alphabet of Cartoon Characters
 ---
 
-<div class="image-grid">
+<div class="flex">
   {% for img in images %}
-  <div class="grid-cell">
+  <div class="cell">
     <a href="/assets/images/toons/{{ img.letter }}.jpg">
       <img
         alt="{{ img.letter}}: {{ img.name }}"
         src="/assets/images/toons/{{ img.letter }}.jpg"
+        class="mw-100"
       />
     </a>
   </div>

@@ -2,13 +2,14 @@
 title: Alphabet of Animals
 ---
 
-<div class="image-grid">
+<div class="flex">
   {% for img in images %}
-  <div class="grid-cell">
+  <div class="cell">
     <a href="/assets/images/animals/{{ img.letter }}.jpg">
       <img
         alt="{{ img.letter}}: {{ img.name }}"
         src="/assets/images/animals/{{ img.letter }}.jpg"
+        class="mw-100"
       />
     </a>
   </div>
