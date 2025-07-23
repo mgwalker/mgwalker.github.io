@@ -1,15 +1,15 @@
-const dayjs = require("dayjs");
-const utc = require("dayjs/plugin/utc");
-const purgeCssPlugin = require("eleventy-plugin-purgecss");
-const sassPlugin = require("@grimlink/eleventy-plugin-sass");
-const sass = require("sass");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const markdownIt = require("markdown-it");
-const markdownAttr = require("markdown-it-attrs");
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc.js";
+import purgeCssPlugin from "eleventy-plugin-purgecss";
+import sassPlugin from "@grimlink/eleventy-plugin-sass";
+import sass from "sass";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import markdownIt from "markdown-it";
+import markdownAttr from "markdown-it-attrs";
 
 dayjs.extend(utc);
 
-module.exports = (config) => {
+export default (config) => {
   const mdParser = markdownIt({
     html: true,
   });
@@ -22,7 +22,7 @@ module.exports = (config) => {
 
   config.addFilter(
     "json",
-    (o) => `<pre><code>${JSON.stringify(o, null, 2)}</code></pre>`
+    (o) => `<pre><code>${JSON.stringify(o, null, 2)}</code></pre>`,
   );
 
   config.addFilter("datestamp", (date) => {

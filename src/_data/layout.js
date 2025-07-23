@@ -1,1 +1,1 @@
-module.exports = "layouts/default"
+export default "layouts/default";

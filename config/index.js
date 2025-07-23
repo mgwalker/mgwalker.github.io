@@ -1,7 +1,7 @@
-const configurePlugins = require("./plugins.js");
-const addShortcodes = require("./shortcodes.js");
+import configurePlugins from "./plugins.js";
+import addShortcodes from "./shortcodes.js";
 
-module.exports = (config) => {
+export default (config) => {
   configurePlugins(config);
   addShortcodes(config);
 };

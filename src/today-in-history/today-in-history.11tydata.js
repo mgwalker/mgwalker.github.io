@@ -2268,7 +2268,7 @@ const todayIndex = (() => {
 const next = todayIndex < days.length - 1 ? todayIndex + 1 : 0;
 const previous = todayIndex > 0 ? todayIndex - 1 : days.length - 1;
 
-module.exports = {
+export default {
   layout: "layouts/today-in-history",
   days,
   today: {

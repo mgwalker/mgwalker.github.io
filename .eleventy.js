@@ -1,8 +1,8 @@
-const configure = require("./config");
-const esbuild = require("esbuild");
-const yaml = require("js-yaml");
+import esbuild from "esbuild";
+import yaml from "js-yaml";
+import configure from "./config/index.js";
 
-module.exports = (eleventyConfig) => {
+export default (eleventyConfig) => {
   configure(eleventyConfig);
 
   eleventyConfig.ignores.add("src/sass/modules/**/*.scss");

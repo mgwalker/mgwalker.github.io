@@ -19,6 +19,17 @@ thing-group {
       width: 33%;
       margin: 0.5rem;
 
+      thing-image {
+        background-color: var(--bg-header);
+        height: 175px;
+        background-image: var(--bg-image);
+        background-repeat: none;
+        background-position: center;
+        background-size: cover;
+        border: 1px solid var(--bg-header);
+        border-radius: 5px;
+      }
+
       thing-title {
         display: block;
         font-size: 1.2em;

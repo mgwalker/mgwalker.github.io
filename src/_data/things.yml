@@ -5,11 +5,13 @@
     how I work or the kinds of things I work on, this section is for you.
   things:
     - name: Personal README
+      image: /assets/images/it-me.png
       url: /readme
       about: >
         A personal README is a great place to tell colleagues about how you like
         to work. This is mine!
     - name: Things I contributed to
+      image: /assets/images/salute.png
       url: /work
       about: >
         I was a federal civil servant for over 17 years. I decided to reflect
@@ -20,15 +22,18 @@
     Some things I've written.
   things:
     - name: Blog
+      image: /assets/images/blog.png
       url: /blog
       about: >
         I don't often think about typing up my thoughts into blog posts, but
         every now and then, I remember. And this is them.
     - name: Pride posts, 2023
+      image: /assets/images/pride.png
       url: /pride
       about: >
         A series of LGBTQ+ Pride posts I wrote for work in 2023.
     - name: African American History Month 2025
+      image: /assets/images/black-history.png
       url: /african-american-history-2025
       about: >
         A series of posts about African American history I wrote for work in
@@ -40,17 +45,20 @@
     I like to draw. It brings me joy. Here are some of my drawing collections.
   things:
     - name: Today in History
+      image: /assets/images/today-in-history/0731_768.jpg
       url: /today-in-history
       about: >
         Silly illustrations of significant events in history. I didn't make it
         through a full calendar year before I stopped doing them. Sorry 'bout
         it.
     - name: Alphabet of Animals
+      image: /assets/images/animals/C.jpg
       url: /animals
       about: >
         Drawings of animals for each letter of the alphabet with almost 100%
         entirely real animals!
     - name: Alphabet of Cartoon Characters
+      image: /assets/images/toons/I.jpg
       url: /toons
       about: >
         Drawings of cartoon characters for some of the letters of the alphabet.
@@ -63,16 +71,19 @@
     Weather Service public API to build some sites for myself.
   things:
     - name: When is going to snow?
+      image: /assets/images/snow.png
       url: /next-snow
       about: >
         A page that uses your location data or a ZIP code you type in to look
         for the next snow in your forecast.
     - name: Atlantic hurricanes
+      image: /assets/images/hurricane.png
       url: /atlantic-hurricanes
       about: >
         A different presentation of the information available from the National
         Hurricane Center. Scraped directly from the source on a regular basis.
     - name: Storm Prediction Center
+      image: /assets/images/spc.png
       url: /spc
       about: >
         A different presentation of the next 3 days' convective outlooks from
@@ -84,11 +95,13 @@
     And a few other things I've done that don't really fit any particular theme.
   things:
     - name: Pottery projects
+      image: /assets/images/pottery.png
       url: /pottery-projects
       about: >
         Some of my early pottery projects. I lost interest in keeping it
         updated pretty early into my pottery practice.
     - name: CSS sphere
+      image: /assets/images/css-sphere.png
       url: /css-sphere
       about: >
         I was introduced to CSS's 3D transformations, so naturally I wondered
@@ -96,6 +109,7 @@
         (Not really. This uses a lot of Javascript to update the CSS transforms
         over time.) Anyway, here's what I came up with. It's janky!
     - name: Pixures
+      image: /assets/images/gifs.png
       url: /gifs
       about: >
         A small, curated collection of GIFs that I like.

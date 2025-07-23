@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   // Content files referencing CSS classes
   content: ["./site/**/*.html"],
 
