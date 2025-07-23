@@ -5,6 +5,9 @@ thing-group {
 
   h2 {
     margin-bottom: 1rem;
+    background: var(--bg-header);
+    color: var(--text-header);
+    padding: 0 1rem;
   }
 
   thing-group-description {
@@ -14,10 +17,23 @@ thing-group {
 
   thing-container {
     display: flex;
+    flex-wrap: wrap;
 
     a-thing {
-      width: 33%;
+      display: block;
+      width: calc(33% - 1rem);
       margin: 0.5rem;
+
+      @media screen and (max-width: 640px) {
+        width: 100%;
+        margin: 0;
+
+        & + a-thing {
+          margin-top: 1rem;
+          padding-top: 1.5rem;
+          border-top: 1px solid var(--line-color);
+        }
+      }
 
       thing-image {
         background-color: var(--bg-header);
