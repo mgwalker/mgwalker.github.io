@@ -16,6 +16,12 @@
       about: >
         I was a federal civil servant for over 17 years. I decided to reflect
         on what I've done with my time.
+    - name: Books
+      image: /assets/images/books.jpg
+      url: /books
+      about: >
+        A list of eBooks I own. That's all, really. I might eventually expand it
+        to include my thoughts on the ones I've read.
 
 - group: Writings
   description: >
