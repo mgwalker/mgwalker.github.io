@@ -59,7 +59,8 @@ wasn't long until I landed on this:
 ```javascript
 /*
 __$$_jmd - public key
-masterSegment - length of data to be extracted from the encrypted response - 55 is just a fake
+masterSegment - length of data to be extracted from the
+encrypted response - 55 is just a fake
 //FAKE VARIABLES to throw off people hahahahaha
 __$_s - salt value
 __$_v - iv vale
@@ -78,8 +79,12 @@ found that it's being populated from an XHR:
 
 ```javascript
 $.getJSON(_$$_666.route_listview_url, function(data) {
-  /*MasterZoom is the sum of the zoom levels from the routes_list.json file. That is the index in the routesList.v.json -> arr array where we have the public key stored.
-  IF THE ROUTES_LIST CHANGES, REMEMBER TO CHANGE THE INDEX TO BE CORRECT */
+  /*MasterZoom is the sum of the zoom levels from the
+  routes_list.json file. That is the index in the
+  routesList.v.json -> arr array where we have the
+  public key stored.
+  IF THE ROUTES_LIST CHANGES, REMEMBER TO CHANGE THE
+  INDEX TO BE CORRECT */
 __$$_jmd = (data.arr[masterZoom]);
 ```
 
@@ -108,7 +113,7 @@ console REPL'ing:
 await fetch("https://maps.amtrak.com/rttl/js/RoutesList.json")
   .then((r) => r.json())
   .then((list) =>
-    list.reduce((sum, { ZoomLevel }) => sum + (ZoomLevel ?? 0), 0)
+    list.reduce((sum, { ZoomLevel }) => sum + (ZoomLevel ?? 0), 0),
   );
 ```
 
@@ -126,8 +131,11 @@ into that.
 For the salt, the comments say this:
 
 ```javascript
-/*Salt Value - the element is at the 8th position. So we can essentially pick any number from 0-100 (length of the s array in the file), get the length of the element, and then go to that index
-the following funky looking code will evaluate to 8. Salt has a length of 8
+/*Salt Value - the element is at the 8th position. So
+we can essentially pick any number from 0-100 (length
+of the s array in the file), get the length of the
+element, and then go to that index the following funky
+looking code will evaluate to 8. Salt has a length of 8
 */
 __$_s1._$_s =
   data.s[data.s[Math.floor(Math.random() * (data.s.length + 1))].length];
@@ -139,8 +147,12 @@ have been stripped away? In any case, the initialization vector code looks more
 or less the same:
 
 ```javascript
-/*Initialization Vector Value - the element is at the 32th position. So we can essentially pick any number from 0-100 (length of the IV array in the file), get the length of the element, and then go to that index
-the following funky looking code will evaluate to 32 - IV has a length of 32		
+/*Initialization Vector Value - the element is at the
+32th position. So we can essentially pick any number
+from 0-100 (length of the IV array in the file), get
+the length of the element, and then go to that index
+the following funky looking code will evaluate to 32
+- IV has a length of 32		
 */
 __$_s1._$_i =
   data.v[data.v[Math.floor(Math.random() * (data.v.length + 1))].length];
@@ -158,12 +170,20 @@ looking a little above that for context, I find two interesting things:
    Eureka! (Maybe.)
 2. Look at these amazing comments!
    ```javascript
-   /*MasterSegment is the length of the string at the end of the encrypted data that contains the secret key
+   /*MasterSegment is the length of the string at the
+   end of the encrypted data that contains the secret
+   key
     To decrypt - we do the following
-   1. Take masterSegment (88) length - from the right of the data - this has the private key
-   2. Everything from 0 to the end - master segment is the raw data - that needs to be decrypted
-   3. Decrypt the 88 characters using the public key - that will give you a pipe separated string of the private key (random guid from MDS) and a time stamp (to scramble it)
-   4. Now use the private key and decrypt the data stored from step 2.
+   1. Take masterSegment (88) length - from the right
+      of the data - this has the private key
+   2. Everything from 0 to the end - master segment is
+      the raw data - that needs to be decrypted
+   3. Decrypt the 88 characters using the public key -
+      that will give you a pipe separated string of the
+      private key (random guid from MDS) and a time
+      stamp (to scramble it)
+   4. Now use the private key and decrypt the data
+      stored from step 2.
    5. Parse the decrypted data - and rejoice
    6. KSUE -means key issue
    7. __$$_jmd - the public key that we obtain
@@ -178,8 +198,8 @@ var json = JSON.parse(
     dd.substring(0, dd.length - masterSegment),
     __$_s1._$_dcrt(dd.substr(dd.length - masterSegment), __$$_jmd).split("|")[
       masterSegment - 88
-    ]
-  )
+    ],
+  ),
 );
 ```
 
@@ -208,7 +228,8 @@ breakpoint and then stepping into the debugger (presented here formatted with
 prettier):
 
 ```javascript
-/*CryptoJS-Security - the salt and IV values here are fake to throw someone off. All variable names are changed*/
+/*CryptoJS-Security - the salt and IV values here are fake to throw
+someone off. All variable names are changed*/
 var __$_s1 = {
   _$_s: "amtrak",
   _$_i: "map",
@@ -217,7 +238,7 @@ var __$_s1 = {
       ._$_dcr(
         _$_cjs.lib._$_cpar.create({ _$_ctxt: _$_cjs.enc.Base64.parse(_) }),
         this._$_gk($),
-        { iv: _$_cjs.enc.Hex.parse(this._$_i) }
+        { iv: _$_cjs.enc.Hex.parse(this._$_i) },
       )
       .toString(_$_cjs.enc.Utf8);
   },
@@ -235,7 +256,9 @@ This `_$_cjs._$_sea._$_dcr()` function is defined in `AS.js`, which begins with
 yet more super helpful comments:
 
 ```javascript
-/*CJS-AES - origin cryptojs-aes file. Variables/methods all changed with random names*/
+/*CJS-AES - origin cryptojs-aes file.
+Variables/methods all changed with
+random names*/
 ```
 
 A little more inspection and it turns out all of `_$_cjs` is just

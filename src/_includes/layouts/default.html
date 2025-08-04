@@ -13,6 +13,9 @@ layout: layouts/base.html
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,maximum-scale=2" />
     <link preload rel="stylesheet" type="text/css" href="/css/main.css" />
+    {% if style %}
+      <link preload rel="stylesheet" type="text/css" href="{{ style }}" />
+    {% endif %}
     <link rel="canonical" href="suddenlygreg.com{{ page.url }}" />
     <script
       type="text/javascript"
