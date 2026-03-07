@@ -17,10 +17,6 @@ layout: layouts/base.html
       <link preload rel="stylesheet" type="text/css" href="{{ style }}" />
     {% endif %}
     <link rel="canonical" href="suddenlygreg.com{{ page.url }}" />
-    <script
-      type="text/javascript"
-      src="https://webring.18f.org/webcomponent.js?bust=20240723"
-    ></script>
 
     <script>
       /*to prevent Firefox FOUC, this must be here*/
@@ -54,10 +50,6 @@ layout: layouts/base.html
     </header>
 
     <main>{{ content }}</main>
-
-    <div class="webring-wrapper">
-      <webring-18f from="https://suddenlygreg.com"></webring-18f>
-    </div>
 
     <footer>
       <a rel="me" href="https://social.mytinygiraffe.com/@greg">@greg@mytinygiraffe.com on Mastodon</a>
