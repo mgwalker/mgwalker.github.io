@@ -5,7 +5,7 @@
 
 2025 got off to a really shitty start for respecting, appreciating, and
 celebrating the incredible diversity of the American people, but while the US
-government may have decided to pretend like we're monolothich, I was fortunate
+government may have decided to pretend like we're monolothic, I was fortunate
 enough to be in a workplace that cares. So, "official" observances were canceled
 but in our work Slack, I posted these cool bits of African American history that
 are meant to show that African American history is integral to every aspect of
@@ -87,7 +87,7 @@ being the goober that I am, I was reminded of this scene from _Blazing Saddles_:
   <source src="/assets/video/civil-service.mp4" type="video/mp4">
 </video>
 
-<small>transcript: Woo, look at that start! Ooo-ee, Civil service!</small>
+<small>transcript: Woo, look at that star! Ooo-ee, Civil service!</small>
 
 African Americans have long been a staple of the civil service, often
 compromising disproportionately large share of the workforce compared to the
@@ -153,7 +153,7 @@ Steven Hanson. Cowboys tended to cook for themselves, and Hanson had a dressing
 recipe that he served alongside his meals. He kept working at it until he landed
 on what we know as ranch today. It was so well-liked by the other cowpoke that
 he started the Hidden Valley Ranch company, and one of America’s most-beloved
-condiments was born.African American history is American history. There’s
+condiments was born. African American history is American history. There’s
 nothing about American culture that is untouched by Black influence and
 innovation, and we’re a better, happier, tastier place because of the
 contributions of African Americans.
@@ -197,7 +197,7 @@ Happy African American History Month!
 ## February 14
 
 We work in tech here, and we love (love?) tech, right? We just love hopping on a
-uick Meet or Zoom call to work on gnarly problems impacting the public
+quick Meet or Zoom call to work on gnarly problems impacting the public
 experience of government. Even if we were all in offices, there’d be no escaping
 the need for telecommunication. And for this, we have to thank Dr. Marian Rogers
 Croak. Dr. Croak, an African American engineer, spent decades at Bell Labs and
@@ -237,9 +237,9 @@ Happy African American History Month!
 
 There’s nothing more American than rock and roll. An amalgam of American musical
 traditions before it, rock and roll fused jazz, the blues, gospel, country, and
-more. The concept can be traced as far back as a 1867 African-American spiritual
+more. The concept can be traced as far back as an 1867 African-American spiritual
 that evokes the phrase, “rock my soul,” serving us a meaning of “rock” that’s
-still well-understand today. By the 1940s, the term “rock and roll” was used pretty
+still well-understood today. By the 1940s, the term “rock and roll” was used pretty
 frequently to refer to dancing along with rhythm and blues. It wasn’t until the
 1950s, though, that rock and roll emerged as a distinct musical style.
 
