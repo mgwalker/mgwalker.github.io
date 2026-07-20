@@ -1,6 +1,6 @@
 :root {
   --bg-wash: rgb(173, 210, 241);
-  --bg-header: #0f69af;
+  --bg-header: #0d548b;
   --bg-body: white;
   --line-color: #888888;
   --text-primary: black;
@@ -11,7 +11,7 @@
   --text-footer-link: white;
   --text-link-on-dark: rgb(173, 210, 241);
   --text-link-hover-on-dark: rgb(244, 137, 150);
-  --text-link-visited-on-dark: rgb(192, 155, 251);
+  --text-link-visited-on-dark: rgb(241, 211, 238);
 
   @media (prefers-color-scheme: dark) {
     --bg-wash: rgb(15, 26, 46);
@@ -32,7 +32,7 @@
 html {
   &.ui-mode--light {
     --bg-wash: rgb(173, 210, 241);
-    --bg-header: #0f69af;
+    --bg-header: #0d548b;
     --bg-body: white;
 
     --text-primary: black;
@@ -51,6 +51,6 @@ html {
     --text-header: rgb(199, 199, 209);
     --text-link: rgb(173, 210, 241);
     --text-link-hover: rgb(244, 137, 150);
-    --text-link-visited: rgb(192, 155, 251);
+    --text-link-visited: rgb(184, 173, 238);
   }
 }

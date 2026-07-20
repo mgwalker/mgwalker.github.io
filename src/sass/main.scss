@@ -107,12 +107,11 @@ body {
   footer {
     background: var(--bg-header);
     color: var(--text-header);
-    position: sticky;
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: padding 150ms;
+    padding: 1rem 0;
 
     a,
     a:visited,
@@ -122,10 +121,6 @@ body {
 
     * {
       margin: 0 1rem;
-    }
-
-    &:hover {
-      padding: 1rem 0;
     }
   }
 }
