@@ -14,7 +14,8 @@ As a friend put it in regard to digital humanities,
 > [...] if digital methodology stops being new / novel and is simply an
 > expected part of how you do your work, then maybe you’re just doing
 > ‘humanities.’”
-> Replace “humanities” with “service delivery,” and it is no less true.
+
+Replace “humanities” with “service delivery,” and it is no less true.
 
 But the word “digital” has been a useful tool for getting service designers
 of all stripes into rooms they otherwise would have been barred from.
