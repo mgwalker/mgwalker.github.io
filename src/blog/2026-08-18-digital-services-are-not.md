@@ -1,7 +1,7 @@
 ---
 title: Digital service delivery is just service delivery.
 date: 2026-08-18
-summary: In the dead of the night, cowards that they are, GSA leadership sent an email to all 18F staff stating that our office is abolished, we are placed on administrative leave, and we'll be fired in 60 days. But I'm a public servant, and I'm not done yet.
+summary: Digital service delivery contains one word more than it really needs, but it has historically been an important word. That notwithstanding, the point is not digital at all.
 ---
 
 Digital service delivery is a bit of a misnomer. It implies that digital
