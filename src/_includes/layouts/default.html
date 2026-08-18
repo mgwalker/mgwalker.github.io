@@ -29,7 +29,9 @@ layout: layouts/base.html
     />
     <meta property="og:title" content="{{ title }}" />
     {%- if meta.description %}
-    <meta property="og:description" content="{{ meta.description}}" />
+    <meta property="og:description" content="{{ meta.description }}" />
+    {%- elsif summary %}
+    <meta property="og:description" content="{{ summary }}" />
     {%- endif %}
     <meta property="og:image" content="{{ meta.image}}" />
     {%- if meta.image %} {%- if meta.imageAlt %}
