@@ -118,7 +118,7 @@ It was!
 
 I created a lexicon that is basically a slightly modified version of the alert
 definition from the [NWS API OpenAPI spec](https://api.weather.gov/openapi.json)
-with a few slight modifications based on 1) differences from JSON Schema and b)
+with a few slight modifications based on a) differences from JSON Schema and b)
 some minor improvements I wanted to add to the alerts. If you were paying
 attention earlier, you might not be surprised to learn that the lexicon is
 `com.mytinygiraffe.wx.alerts.v1`.
@@ -155,6 +155,11 @@ websocket that streams atproto events in (basically) realtime. Here's the
 If you watch long enough, you'll see records created as new alerts are issued
 and deleted as alerts expire.
 
+> Importantly, the catalog view shows all of the current records, whereas the
+> Jetstream pushes updates as records are created or deleted. In this way,
+> atproto collections can easily represent both slow-changing data as well as
+> fast-changing data.
+
 And it really is just a plain websocket under the hood. To demonstrate to myself
 how this works, I created a super simple website that attaches to the websocket
 and adds and removes alerts in realtime:
@@ -189,6 +194,30 @@ Here's the repo containing the service that fetches alerts and creates and
 deletes records in my PDS:
 
 [https://code.suddenlygreg.com/weather/at-alerts](https://code.suddenlygreg.com/weather/at-alerts).
+
+## What's next
+
+Well, for this particular project, probably not much. It's doing everything I
+had hoped for. But it's also just a proof-of-concept. Ultimately I'm providing
+a bridge to government data, but anyone subscribing to my repo is having to
+trust that I'm not doing anything funky with the data.
+
+What would be super duper cool would be if the government created its own PDS
+and alert lexicon, and published alerts to its own collection. Then the data
+would not be derived from an authoritative source but would itself **_be_** an
+authoritative source.
+
+I don't know if any government agencies anywhere have created their own custom
+atproto lexicons or even setup their own PDSes, but I don't see any good reason
+they shouldn't. All kinds of government data could be shared that way, not just
+weather. The Corps of Engineers could have feeds of the flow rates at all the
+dams it manages. The Federal Reserve could post its interest rates. The former
+might udpate every hour while the other might only update every few months, but
+the protocol happily supports both.
+
+The practical upshot is that the government would be embracing an existing
+standard and making it easier for people to access government data, which would
+lead to all kinds of interesting applications that are hard to even imagine yet.
 
 [^1]:
     The services running over ActivityPub are often collectivly referred to
