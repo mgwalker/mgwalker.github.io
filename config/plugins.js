@@ -1,11 +1,12 @@
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import sassPlugin from "@grimlink/eleventy-plugin-sass";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc.js";
 import purgeCssPlugin from "eleventy-plugin-purgecss";
-import sassPlugin from "@grimlink/eleventy-plugin-sass";
-import sass from "sass";
-import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import markdownIt from "markdown-it";
 import markdownAttr from "markdown-it-attrs";
+import markdownFootnotes from "markdown-it-footnote";
+import sass from "sass";
 
 dayjs.extend(utc);
 
@@ -14,6 +15,7 @@ export default (config) => {
     html: true,
   });
   mdParser.use(markdownAttr);
+  mdParser.use(markdownFootnotes);
   config.setLibrary("md", mdParser);
 
   config.addPlugin(purgeCssPlugin);

@@ -1,4 +1,17 @@
 .blog {
+  blockquote {
+    border: 1px solid var(--text-link);
+    border-width: 1px 1px 1px 1rem;
+    padding: 1rem;
+
+    p:first-of-type {
+      margin-top: 0;
+    }
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
   img {
     max-width: 100%;
     object-fit: contain;
