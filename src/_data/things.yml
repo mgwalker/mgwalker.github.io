@@ -1,6 +1,15 @@
 
 - group: About me
-  description: >
+  description: |
+    I am what they call a "software engineer." That means my job is to give
+    instructions to an electron manipulator so that it coordinates with the
+    photon emitter. (I put things on screens.) I believe deeply in a good
+    user experience, which requires UX research and design to come before
+    any engineering work. I also believe that computing is a lot simpler than
+    we've made it appear, and it's my job to make it more accessible to
+    people who haven't been trained in electron manipulator instructing
+    (that is, programming).
+    <br><br>
     These are some things that are kind of about me. If you're interested in
     how I work or the kinds of things I work on, this section is for you.
   things:
@@ -10,7 +19,7 @@
       about: >
         A personal README is a great place to tell colleagues about how you like
         to work. This is mine!
-    - name: Things I contributed to
+    - name: Things I've contributed to
       image: /assets/images/salute.png
       url: /work
       about: >

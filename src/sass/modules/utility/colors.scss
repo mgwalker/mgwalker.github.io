@@ -1,3 +1,88 @@
-.bg-white {
-  background-color: white;
+@use "sass:map";
+
+$colors: (
+  "light": (
+    "color-primary": #0d548b,
+    "color-primary-lighter": #adbbd2,
+    "color-primary-lightest": #eff7fe,
+    "color-primary-darker": #0a4277,
+    "color-primary-darkest": #063063,
+    "color-primary-text-light": white,
+    "color-primary-text-dark": black,
+
+    "color-secondary": #858cba,
+    "color-secondary-lighter": #b8cbe3,
+    "color-secondary-lightest": #cdd0e7,
+    "color-secondary-darker": #7178a5,
+    "color-secondary-darkest": #5d6490,
+    "color-secondary-text-light": white,
+    "color-secondary-text-dark": black,
+
+    "color-text-primary": black,
+    "color-text-secondary": black,
+  ),
+  "dark": (
+    "color-primary": #0d548b,
+    "color-primary-darker": #adbbd2,
+    "color-primary-darkest": #d8e1f0,
+    "color-primary-lighter": #0a4277,
+    "color-primary-lightest": #0b1e3e,
+    "color-primary-text-light": white,
+    "color-primary-text-dark": white,
+
+    "color-secondary": #858cba,
+    "color-secondary-darker": #b5b9d7,
+    "color-secondary-darkest": #cdd0e7,
+    "color-secondary-lighter": #49527c,
+    "color-secondary-lightest": #5d6490,
+    "color-secondary-text-light": white,
+    "color-secondary-text-dark": white,
+
+    "color-text-primary": white,
+    "color-text-secondary": black,
+  ),
+);
+
+:root {
+  @each $name, $color in map.get($colors, "light") {
+    --#{$name}: #{$color};
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @each $name, $color in map.get($colors, "dark") {
+      --#{$name}: #{$color};
+    }
+  }
+}
+
+html.ui-mode--light {
+  @each $name, $color in map.get($colors, "light") {
+    --#{$name}: #{$color};
+  }
+}
+
+html.ui-mode--dark {
+  @each $name, $color in map.get($colors, "dark") {
+    --#{$name}: #{$color};
+  }
+}
+
+@each $name, $color in map.get($colors, "light") {
+  .background-#{$name} {
+    background-color: #{$color};
+  }
+  .text-#{$name} {
+    color: #{$color};
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  @each $name, $color in map.get($colors, "dark") {
+    .background-#{$name} {
+      background-color: #{$color};
+    }
+    .text-#{$name} {
+      color: #{$color};
+    }
+  }
 }

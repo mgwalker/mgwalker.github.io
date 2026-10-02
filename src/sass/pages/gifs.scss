@@ -52,40 +52,14 @@
     opacity: 0;
   }
 
-  .image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80vw;
-    margin: 0 auto;
-    justify-content: left;
-    align-items: top;
+  .grid-cell {
+    width: calc(250px - 1rem);
+    text-align: center;
+    margin: 1rem;
+  }
 
-    .grid-cell {
-      width: calc(250px - 2rem);
-      text-align: center;
-      background-color: white;
-      color: var(--ld-col-neutral-900);
-      margin: 2rem;
-
-      a {
-        color: var(--ld-col-rb-800);
-        &:visited {
-          color: var(--ld-col-rb-600);
-        }
-        &:hover {
-          color: var(--ld-col-rb-700);
-        }
-      }
-    }
-
-    &.left .grid-cell {
-      text-align: left;
-    }
-
-    .grid-cell img {
-      max-height: calc(100% - 10px);
-      max-width: calc(100% - 10px);
-      padding: 5px;
-    }
+  .grid-cell img {
+    max-height: calc(100% - 10px);
+    max-width: calc(100% - 10px);
   }
 }

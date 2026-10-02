@@ -2,16 +2,18 @@
 title: Alphabet of Cartoon Characters
 ---
 
-<div class="flex">
-  {% for img in images %}
-  <div class="cell">
-    <a href="/assets/images/toons/{{ img.letter }}.jpg">
-      <img
-        alt="{{ img.letter}}: {{ img.name }}"
-        src="/assets/images/toons/{{ img.letter }}.jpg"
-        class="mw-100"
-      />
-    </a>
+<div class="grid-container">
+  <div class="tablet:grid-row flex-wrap--wrap">
+    {% for img in images %}
+    <div class="grid-cell-4">
+      <a href="/assets/images/toons/{{ img.letter }}.jpg">
+        <img
+          alt="{{ img.letter}}: {{ img.name }}"
+          src="/assets/images/toons/{{ img.letter }}.jpg"
+          class="mw-100"
+        />
+      </a>
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>

@@ -27,10 +27,11 @@ export default (config) => {
     (o) => `<pre><code>${JSON.stringify(o, null, 2)}</code></pre>`,
   );
 
-  config.addFilter("datestamp", (date) => {
-    if (date) {
-      return dayjs(date).utc().format("D MMMM YYYY");
-    }
-    return "";
-  });
+  config.addFilter("datestamp", (date) =>
+    date ? dayjs(date).utc().format("D MMMM YYYY") : "",
+  );
+
+  config.addFilter("isodate", (date) =>
+    date ? dayjs(date).toISOString() : "",
+  );
 };

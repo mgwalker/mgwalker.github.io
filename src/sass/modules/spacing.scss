@@ -1,0 +1,36 @@
+@use "utility/breakpoints";
+
+@include breakpoints.apply() using ($prefix) {
+  @for $i from 0 through 6 {
+    .#{$prefix}margin-#{$i} {
+      margin: #{$i}rem;
+    }
+    .#{$prefix}margin-top-#{$i} {
+      margin-top: #{$i}rem;
+    }
+    .#{$prefix}margin-bottom-#{$i} {
+      margin-bottom: #{$i}rem;
+    }
+    .#{$prefix}margin-left-#{$i} {
+      margin-left: #{$i}rem;
+    }
+    .#{$prefix}margin-right-#{$i} {
+      margin-right: #{$i}rem;
+    }
+    .#{$prefix}padding-#{$i} {
+      padding: #{$i}rem;
+    }
+    .#{$prefix}padding-top-#{$i} {
+      padding-top: #{$i}rem;
+    }
+    .#{$prefix}padding-bottom-#{$i} {
+      padding-bottom: #{$i}rem;
+    }
+    .#{$prefix}padding-left-#{$i} {
+      padding-left: #{$i}rem;
+    }
+    .#{$prefix}padding-right-#{$i} {
+      padding-right: #{$i}rem;
+    }
+  }
+}

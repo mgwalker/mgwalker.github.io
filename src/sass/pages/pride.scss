@@ -122,6 +122,7 @@
       blockquote {
         background: initial;
         margin: 1rem 2rem;
+        max-width: 54ex;
 
         &:before {
           content: "“";

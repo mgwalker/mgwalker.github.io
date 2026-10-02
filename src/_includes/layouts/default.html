@@ -14,7 +14,9 @@ layout: layouts/base.html
     <meta name="viewport" content="width=device-width,maximum-scale=2" />
     <link preload rel="stylesheet" type="text/css" href="/css/main.css" />
     {% if style %}
-      <link preload rel="stylesheet" type="text/css" href="{{ style }}" />
+    {% for s in style %}
+      <link preload rel="stylesheet" type="text/css" href="{{ s }}" />
+    {% endfor %}
     {% endif %}
     <link rel="canonical" href="suddenlygreg.com{{ page.url }}" />
 
@@ -39,23 +41,31 @@ layout: layouts/base.html
     {%- endif %} {%- endif %}
   </head>
   <body>
-    <header>
-      <a href="/"><img src="/assets/images/it-me.png" alt="go home" /></a>
-      suddenlygreg.com{%if title != blank %} » {{ title }}{% endif %}
-      <div style="float: right; font-weight: normal" aria-hidden="true">
-        <a href="#" onClick="toggleUIMode('light')">light</a>
-        /
-        <a href="#" onClick="toggleUIMode('dark')">dark</a>
-        /
-        <a href="#" onClick="toggleUIMode()">system</a>
+    <header class="color-primary grid-container">
+      <div class="grid-row flex-align--center gap">
+        <a href="/"><img src="/assets/images/it-me.png" alt="go home" /></a>
+        <div class="flex-grow">
+          suddenlygreg.com{%if title != blank %} » {{ title }}{% endif %}
+        </div>
+        <div aria-hidden="true">
+          <a href="#" onClick="toggleUIMode('light')">light</a>
+          /
+          <a href="#" onClick="toggleUIMode('dark')">dark</a>
+          /
+          <a href="#" onClick="toggleUIMode()">system</a>
+        </div>
       </div>
     </header>
 
-    <main>{{ content }}</main>
+    <main>
+      {{ content }}
+    </main>
 
-    <footer>
+    <footer class="color-primary-lighter grid-container">
+      <div class="grid-row flex-justify--center gap">
       <a rel="me" href="https://bsky.app/profile/suddenlygreg.com">@suddenlygreg.com on Bsky</a>
-      | <a href="https://github.com/mgwalker">GitHub</a>
+      | <a href="https://code.suddenlygreg.com">code repos</a>
+      </div>
     </footer>
 
     <script async type="module" src="/js/main.js"></script>

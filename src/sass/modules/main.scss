@@ -1,0 +1,24 @@
+@use "sass:map";
+@use "utility/breakpoints";
+
+@media only screen and #{map.get(breakpoints.$breakpoints, "mobile")} {
+  main {
+    margin: 0 2rem;
+  }
+}
+@media only screen and #{map.get(breakpoints.$breakpoints, "tablet")} {
+  main {
+    margin: 0 2rem;
+  }
+}
+@media only screen and #{map.get(breakpoints.$breakpoints, "desktop")} {
+  main {
+    width: 880px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
+
+main {
+  margin-bottom: 2rem;
+}

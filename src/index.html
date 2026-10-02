@@ -1,11 +1,58 @@
 ---
+style: css/index.css
 ---
 
-<h1>Howdy</h1>
+<div class="intro desktop:grid-row grid-column desktop:flex-align--flex-end">
+  <span class="giant">
+    Hello!
+  </span>
+  <p>
+    I'm Greg. I'm a software engineer who just wants to make
+    life easier for more people and play with my dog.
+  </p>
+</div>
 
-This is just a landing page for the stuff I host on GitHub Pages. There probably
-won't ever be more here than just this. It's the links below that are cool. {%-
-for section in things %}
+
+{%- for section in things %}
+  <h2 class="padding-1 color-secondary-lighter">{{ section.group }}</h2>
+  <p>{{ section.description }}</p>
+
+  {%- for thing in section.things %}
+  <div class="grid-row gap thing">
+    <a href="{{ thing.url | url }}" aria-hidden="true" tabindex="-1">
+      <div class="image" style="--bg-image: url({{ thing.image }});"></div>
+    </a>
+    <div class="grid-column">
+    <h4><a href="{{ thing.url | url }}">{{ thing.name }}</a></h4>
+    <p>{{ thing.about }}</p>
+    </div>
+  </div>
+  {%- endfor -%}
+{%- endfor -%}
+
+{% comment %}
+{%- for section in things %}
+<div class="grid-container">
+  <div class="grid-row">
+    <h2>{{ section.group }}</h2>
+  </div>
+  <div class="grid-row gap">
+    {%- for thing in section.things %}
+    <div class="grid-cell-4">
+      <div class="grid-column gap">
+        <a class="grid-column gap" href="{{ thing.url | url }}">
+          <div class="index-grid-image" style="--bg-image: url({{ thing.image }})"></div>
+          {{ thing.name }}
+        </a>
+        {%- if thing.about %}
+        {{ thing.about }}
+        {%- endif -%}
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
+</div>
+
 <thing-group>
   <h2>{{ section.group }}</h2>
   {%- if section.description %}
@@ -24,5 +71,6 @@ for section in things %}
     </a-thing>
     {%- endfor -%}
   </thing-container>
-</thing-group>
+</thing-group -->
 {%- endfor -%}
+{% endcomment %}

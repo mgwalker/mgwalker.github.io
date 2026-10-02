@@ -6,6 +6,7 @@ eleventyComputed:
     description: "{% if day %}{{ day.entries[0].year }}: {{ day.entries[0].title }}{% else %}A collection of Today in History comics{% endif %}"
     image: "{% if day %}https://mgwalker.github.io/assets/images/today-in-history{{ day.iso}}_{{ day.entries[0].year }}.jpg{% endif %}"
     imageAlt: "{% if day %}{{ day.entries[0].caption }}{% endif %}"
+style: /css/today-in-history.css
 ---
 
 <div id="today-in-history">

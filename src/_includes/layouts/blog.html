@@ -1,12 +1,13 @@
 ---
 layout: layouts/default
-style: https://unpkg.com/prism-themes@1.9.0/themes/prism-atom-dark.css
+style:
+  - https://unpkg.com/prism-themes@1.9.0/themes/prism-atom-dark.css
+  - /css/blog.css
 ---
 
-<h1>
+<h1 class="margin-top-2 margin-bottom-2">
   {{ title }}
   {% if date %}
-    <br />
     <sub> {{ date | datestamp }} </sub>
   {% endif %}
 </h1>

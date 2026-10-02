@@ -1,0 +1,30 @@
+.intro {
+  .giant {
+    font-family: Young Serif;
+    font-size: 15vw;
+  }
+  p {
+    margin: 0 0 5.5vw 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 2px;
+  }
+}
+
+.thing {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-primary-lighter);
+  margin: 1rem 0;
+
+  .image {
+    height: 125px;
+    width: 125px;
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+  }
+}
